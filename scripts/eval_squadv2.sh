@@ -1,0 +1,1 @@
+python eval_squad.py --model_type mobilebert --model_name_or_path mobilebert-uncased --max_seq_length 384 --train_batch_size 64  --eval_batch_size 32  --version_2_with_negative

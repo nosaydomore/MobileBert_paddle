@@ -1,0 +1,1 @@
+python train_squad.py --model_type mobilebert --model_name_or_path mobilebert-uncased --max_seq_length 384 --train_batch_size 64  --eval_batch_size 64 --learning_rate 8e-5 --num_train_epochs 6 --logging_steps 30  --save_steps 240  --warmup_radio 0.1  --weight_decay 0.1 --output_dir outputs_squadv1/ --seed 42 --num_workers 0 --min_lr 1e-6 --decay_radio 0.7

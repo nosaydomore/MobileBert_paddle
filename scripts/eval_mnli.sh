@@ -1,0 +1,1 @@
+python eval_mnli.py --model_type mobilebert --model_name_or_path mobilebert-uncased --max_seq_length 128 --batch_size 64 --seed 42 --task_name mnli

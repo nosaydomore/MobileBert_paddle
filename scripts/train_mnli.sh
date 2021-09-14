@@ -1,0 +1,1 @@
+python train_glue.py --model_type mobilebert --model_name_or_path mobilebert-uncased --max_seq_length 128 --batch_size 64 --learning_rate 8e-5 --num_train_epochs 6 --logging_steps 30  --save_steps 240  --warmup_proportion 0.1  --weight_decay 0.1 --output_dir outputs_mnli/ --seed 42 --task_name mnli
