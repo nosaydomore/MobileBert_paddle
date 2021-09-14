@@ -29,7 +29,7 @@ cd MobileBert_paddle
 
 复现环境使用的是baidu的AIStudio至尊版（V100 32G）
 
-AIStudio项目地址：https://aistudio.baidu.com/aistudio/projectdetail/2367246 , AiStudio运行更方便.
+AIStudio项目地址：https://aistudio.baidu.com/aistudio/projectdetail/2367246 , AiStudio运行更方便. 强烈建议在AIStudio的终端上进行结果复现。
 
 ### 1. 模型转换
 
@@ -153,19 +153,19 @@ mm_acc:
 除了SQuADV1以外，其他数据集在训练总进度70%左右时会慢慢达到论文中的精度，具体收敛趋势可参考task目录下的各数据集的模型训练log `run.log`
 
 **SQuADV1:** 
-`bash train_squadv1.sh`
+`bash scripts/train_squadv1.sh`
 
 模型与log保存在output_squadv1 目录下
 
-模型在SQuADV1上有极少概率会出现最终结果差0.1(em),这是建议重新再跑一边 \\ :p
+模型在SQuADV1上有极少概率会出现最好结果差0.1(em：82.8), 若出现这一情况建议重新再跑1次 \\ :p
 
 **SQuADV2:** 
-`bash train_squadv2.sh`
+`bash scripts/train_squadv2.sh`
 
 模型与log保存在output_squadv2 目录下
 
 **MNLI:**
-`bash train_mnli.sh`
+`bash scripts/train_mnli.sh`
 
 模型与log保存在output_mnli 目录下
 
