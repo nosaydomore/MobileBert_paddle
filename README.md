@@ -26,6 +26,13 @@ cd MobileBert_paddle
 ```
 
 ### 1. 模型转换
+
+提供下载好的pytorch权重以及转换完成的paddle权重
+
+将weight里的文件放在项目中weight的目录下即可
+
+链接: https://pan.baidu.com/s/1o35WuWIUPNWQYyc43dj_pQ 提取码: 92fk
+
 ```python
 python convert.py
 '''
@@ -68,6 +75,8 @@ diff_max: tensor(3.0518e-05)
 分析原因：
 可能是模型为了减少延迟，使用`no_norm`替代了`layer_norm`,使得各个token之间在数值量级上少了约束，导致`cls`与其他差异较大，这里认为模型前向对齐了
 
+此外在复现过程中paddlenlp的tokenizer与hugginface没有对齐，这里也做了对齐，运行`python compare_tokenizer.py`
+
 ### 模型训练与评估
 
 模型在SQuADV1,SQuADV2,MNLI上进行训练微调
@@ -82,7 +91,11 @@ diff_max: tensor(3.0518e-05)
 
 #### 评估
 
-提供已经训练好的模型权重，以供评估
+提供已经训练好的模型权重，以供评估（模型训练过程中的log也保存在里面）
+
+链接: https://pan.baidu.com/s/1Uga9Wwx9cN8CdqD5G4-bFQ 提取码: jftn 
+
+将task文件夹下的文件放在项目的task目录下
 
 在SQuADV1上评估:`bash eval_squadv1.sh`
 
