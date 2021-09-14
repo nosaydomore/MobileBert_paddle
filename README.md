@@ -5,8 +5,8 @@ MobileBERT: a Compact Task-Agnostic BERT for Resource-Limited Devices.
 [https://arxiv.org/pdf/1907.11692.pdf]
 
 原论文效果
-![glue](img\mobilebert_glue.png)
-![squad](img\mobilebert_squad.png)
+![glue](img/mobilebert_glue.png)
+![squad](img/mobilebert_squad.png)
 
 ## 快速开始
 环境要求:
