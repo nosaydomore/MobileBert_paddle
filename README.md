@@ -11,6 +11,8 @@ MobileBERT: a Compact Task-Agnostic BERT for Resource-Limited Devices.
 ## 快速开始
 环境要求:
 
+python==3.7
+
 paddlepaddle==2.1.2\
 pytorch==1.7.1\
 numpy>=1.7\
@@ -25,11 +27,15 @@ git clone https://github.com/nosaydomore/MobileBert_paddle.git
 cd MobileBert_paddle
 ```
 
+复现环境使用的是baidu的AIStudio至尊版（V100 32G）
+
+AIStudio项目地址：https://aistudio.baidu.com/aistudio/projectdetail/2367246 , AiStudio运行更方便.
+
 ### 1. 模型转换
 
 提供下载好的pytorch权重以及转换完成的paddle权重
 
-将weight里的文件放在项目中weight的目录下即可
+将链接中weight里的文件放在项目中weight的目录下即可
 
 链接: https://pan.baidu.com/s/1o35WuWIUPNWQYyc43dj_pQ 提取码: 92fk
 
@@ -95,9 +101,9 @@ diff_max: tensor(3.0518e-05)
 
 链接: https://pan.baidu.com/s/1Uga9Wwx9cN8CdqD5G4-bFQ 提取码: jftn 
 
-将task文件夹下的文件放在项目的task目录下
+将链接中task文件夹下的文件放在项目的task目录下（直接覆盖）
 
-在SQuADV1上评估:`bash eval_squadv1.sh`
+在SQuADV1上评估:`bash scripts/eval_squadv1.sh`
 
 ```
 {
@@ -110,7 +116,7 @@ diff_max: tensor(3.0518e-05)
 }
 ```
 
-在SQuADV2上评估:`bash eval_squadv2.sh`
+在SQuADV2上评估:`bash scripts/eval_squadv2.sh`
 
 ```
 10320/12354
@@ -131,7 +137,7 @@ diff_max: tensor(3.0518e-05)
 }
 ```
 
-在MNLI上评估:`bash eval_mnli.sh`
+在MNLI上评估:`bash scripts/eval_mnli.sh`
 
 ```
 m_acc:
