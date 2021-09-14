@@ -1,0 +1,990 @@
+09/13/2021 20:41:11 - INFO - __main__ - **********  Configuration Arguments **********
+09/13/2021 20:41:11 - INFO - __main__ - adam_epsilon: 1e-06
+09/13/2021 20:41:11 - INFO - __main__ - batch_size: 64
+09/13/2021 20:41:11 - INFO - __main__ - decay_radio: 0.9
+09/13/2021 20:41:11 - INFO - __main__ - device: gpu
+09/13/2021 20:41:11 - INFO - __main__ - layer_lr_decay: 0.8
+09/13/2021 20:41:11 - INFO - __main__ - learning_rate: 8e-05
+09/13/2021 20:41:11 - INFO - __main__ - logging_steps: 30
+09/13/2021 20:41:11 - INFO - __main__ - max_seq_length: 128
+09/13/2021 20:41:11 - INFO - __main__ - max_steps: -1
+09/13/2021 20:41:11 - INFO - __main__ - min_lr: 5e-07
+09/13/2021 20:41:11 - INFO - __main__ - model_name_or_path: mobilebert-uncased
+09/13/2021 20:41:11 - INFO - __main__ - model_type: mobilebert
+09/13/2021 20:41:11 - INFO - __main__ - num_train_epochs: 6
+09/13/2021 20:41:11 - INFO - __main__ - output_dir: outputs_mnli/
+09/13/2021 20:41:11 - INFO - __main__ - save_steps: 240
+09/13/2021 20:41:11 - INFO - __main__ - scheduler_type: cosine_annel
+09/13/2021 20:41:11 - INFO - __main__ - seed: 42
+09/13/2021 20:41:11 - INFO - __main__ - task_name: mnli
+09/13/2021 20:41:11 - INFO - __main__ - warmup_proportion: 0.1
+09/13/2021 20:41:11 - INFO - __main__ - warmup_steps: 0
+09/13/2021 20:41:11 - INFO - __main__ - weight_decay: 0.1
+09/13/2021 20:41:11 - INFO - __main__ - **************************************************
+09/13/2021 20:41:11 - INFO - paddle.utils.download - unique_endpoints {''}
+09/13/2021 20:41:14 - INFO - paddle.utils.download - unique_endpoints {''}
+09/13/2021 20:41:21 - INFO - __main__ - ********** Running training **********
+09/13/2021 20:41:21 - INFO - __main__ -   Num examples = 392702
+09/13/2021 20:41:21 - INFO - __main__ -   Num Epochs = 6
+09/13/2021 20:41:21 - INFO - __main__ -   Instantaneous train batch size = 64
+09/13/2021 20:41:21 - INFO - __main__ -   Instantaneous eval batch size = 128
+09/13/2021 20:41:21 - INFO - __main__ -   Total train batch size (w. accumulation) = 64
+09/13/2021 20:41:21 - INFO - __main__ -   Total optimization steps = 36816
+09/13/2021 20:41:37 - INFO - __main__ - global step 30/36816, epoch: 0, batch: 29, rank_id: 0, loss: 4065136.250000, lr: 0.0000006737, speed: 1.9407 step/s
+09/13/2021 20:41:51 - INFO - __main__ - global step 60/36816, epoch: 0, batch: 59, rank_id: 0, loss: 4076286.000000, lr: 0.0000013257, speed: 2.0524 step/s
+09/13/2021 20:42:06 - INFO - __main__ - global step 90/36816, epoch: 0, batch: 89, rank_id: 0, loss: 1048122.125000, lr: 0.0000019777, speed: 2.0360 step/s
+09/13/2021 20:42:21 - INFO - __main__ - global step 120/36816, epoch: 0, batch: 119, rank_id: 0, loss: 593219.062500, lr: 0.0000026297, speed: 1.9911 step/s
+09/13/2021 20:42:36 - INFO - __main__ - global step 150/36816, epoch: 0, batch: 149, rank_id: 0, loss: 63720.335938, lr: 0.0000032817, speed: 2.0108 step/s
+09/13/2021 20:42:52 - INFO - __main__ - global step 180/36816, epoch: 0, batch: 179, rank_id: 0, loss: 177345.359375, lr: 0.0000039337, speed: 1.8792 step/s
+09/13/2021 20:43:08 - INFO - __main__ - global step 210/36816, epoch: 0, batch: 209, rank_id: 0, loss: 106247.640625, lr: 0.0000045857, speed: 1.9013 step/s
+09/13/2021 20:43:24 - INFO - __main__ - global step 240/36816, epoch: 0, batch: 239, rank_id: 0, loss: 139960.171875, lr: 0.0000052377, speed: 1.8228 step/s
+09/13/2021 20:43:39 - INFO - __main__ - global step 270/36816, epoch: 0, batch: 269, rank_id: 0, loss: 234.009079, lr: 0.0000058897, speed: 2.0053 step/s
+09/13/2021 20:43:54 - INFO - __main__ - global step 300/36816, epoch: 0, batch: 299, rank_id: 0, loss: 83297.515625, lr: 0.0000065417, speed: 2.0098 step/s
+09/13/2021 20:44:09 - INFO - __main__ - global step 330/36816, epoch: 0, batch: 329, rank_id: 0, loss: 47911.335938, lr: 0.0000071937, speed: 2.0001 step/s
+09/13/2021 20:44:24 - INFO - __main__ - global step 360/36816, epoch: 0, batch: 359, rank_id: 0, loss: 120.867607, lr: 0.0000078457, speed: 2.0489 step/s
+09/13/2021 20:44:38 - INFO - __main__ - global step 390/36816, epoch: 0, batch: 389, rank_id: 0, loss: 134.533264, lr: 0.0000084977, speed: 2.0423 step/s
+09/13/2021 20:44:53 - INFO - __main__ - global step 420/36816, epoch: 0, batch: 419, rank_id: 0, loss: 9.988917, lr: 0.0000091497, speed: 2.0352 step/s
+09/13/2021 20:45:08 - INFO - __main__ - global step 450/36816, epoch: 0, batch: 449, rank_id: 0, loss: 353.628082, lr: 0.0000098017, speed: 2.0362 step/s
+09/13/2021 20:45:22 - INFO - __main__ - global step 480/36816, epoch: 0, batch: 479, rank_id: 0, loss: 90.337440, lr: 0.0000104537, speed: 2.0624 step/s
+09/13/2021 20:45:37 - INFO - __main__ - global step 510/36816, epoch: 0, batch: 509, rank_id: 0, loss: 3.744900, lr: 0.0000111057, speed: 2.1124 step/s
+09/13/2021 20:45:51 - INFO - __main__ - global step 540/36816, epoch: 0, batch: 539, rank_id: 0, loss: 109.008926, lr: 0.0000117577, speed: 2.0484 step/s
+09/13/2021 20:46:06 - INFO - __main__ - global step 570/36816, epoch: 0, batch: 569, rank_id: 0, loss: 1.251491, lr: 0.0000124097, speed: 2.0811 step/s
+09/13/2021 20:46:20 - INFO - __main__ - global step 600/36816, epoch: 0, batch: 599, rank_id: 0, loss: 1.206442, lr: 0.0000130617, speed: 2.1081 step/s
+09/13/2021 20:46:35 - INFO - __main__ - global step 630/36816, epoch: 0, batch: 629, rank_id: 0, loss: 2.625376, lr: 0.0000137137, speed: 2.0239 step/s
+09/13/2021 20:46:49 - INFO - __main__ - global step 660/36816, epoch: 0, batch: 659, rank_id: 0, loss: 59.322895, lr: 0.0000143657, speed: 2.0934 step/s
+09/13/2021 20:47:04 - INFO - __main__ - global step 690/36816, epoch: 0, batch: 689, rank_id: 0, loss: 57.168247, lr: 0.0000150177, speed: 2.0448 step/s
+09/13/2021 20:47:19 - INFO - __main__ - global step 720/36816, epoch: 0, batch: 719, rank_id: 0, loss: 1.234787, lr: 0.0000156697, speed: 2.0033 step/s
+09/13/2021 20:47:33 - INFO - __main__ - global step 750/36816, epoch: 0, batch: 749, rank_id: 0, loss: 1.076497, lr: 0.0000163217, speed: 2.0655 step/s
+09/13/2021 20:47:48 - INFO - __main__ - global step 780/36816, epoch: 0, batch: 779, rank_id: 0, loss: 1.182975, lr: 0.0000169736, speed: 2.0668 step/s
+09/13/2021 20:48:02 - INFO - __main__ - global step 810/36816, epoch: 0, batch: 809, rank_id: 0, loss: 1.250686, lr: 0.0000176256, speed: 2.1041 step/s
+09/13/2021 20:48:17 - INFO - __main__ - global step 840/36816, epoch: 0, batch: 839, rank_id: 0, loss: 1.159756, lr: 0.0000182776, speed: 2.0384 step/s
+09/13/2021 20:48:31 - INFO - __main__ - global step 870/36816, epoch: 0, batch: 869, rank_id: 0, loss: 1.168809, lr: 0.0000189296, speed: 2.0328 step/s
+09/13/2021 20:48:47 - INFO - __main__ - global step 900/36816, epoch: 0, batch: 899, rank_id: 0, loss: 1.221206, lr: 0.0000195816, speed: 1.9342 step/s
+09/13/2021 20:49:01 - INFO - __main__ - global step 930/36816, epoch: 0, batch: 929, rank_id: 0, loss: 1.027046, lr: 0.0000202336, speed: 2.0647 step/s
+09/13/2021 20:49:16 - INFO - __main__ - global step 960/36816, epoch: 0, batch: 959, rank_id: 0, loss: 1.133984, lr: 0.0000208856, speed: 2.0764 step/s
+09/13/2021 20:49:31 - INFO - __main__ - global step 990/36816, epoch: 0, batch: 989, rank_id: 0, loss: 1.172239, lr: 0.0000215376, speed: 2.0464 step/s
+09/13/2021 20:49:45 - INFO - __main__ - global step 1020/36816, epoch: 0, batch: 1019, rank_id: 0, loss: 1.172494, lr: 0.0000221896, speed: 2.1039 step/s
+09/13/2021 20:50:00 - INFO - __main__ - global step 1050/36816, epoch: 0, batch: 1049, rank_id: 0, loss: 1.056073, lr: 0.0000228416, speed: 1.9879 step/s
+09/13/2021 20:50:15 - INFO - __main__ - global step 1080/36816, epoch: 0, batch: 1079, rank_id: 0, loss: 1.158099, lr: 0.0000234936, speed: 2.0427 step/s
+09/13/2021 20:50:29 - INFO - __main__ - global step 1110/36816, epoch: 0, batch: 1109, rank_id: 0, loss: 1.132474, lr: 0.0000241456, speed: 2.0328 step/s
+09/13/2021 20:50:44 - INFO - __main__ - global step 1140/36816, epoch: 0, batch: 1139, rank_id: 0, loss: 1.138751, lr: 0.0000247976, speed: 1.9988 step/s
+09/13/2021 20:50:59 - INFO - __main__ - global step 1170/36816, epoch: 0, batch: 1169, rank_id: 0, loss: 1.107221, lr: 0.0000254496, speed: 1.9910 step/s
+09/13/2021 20:51:14 - INFO - __main__ - global step 1200/36816, epoch: 0, batch: 1199, rank_id: 0, loss: 1.245415, lr: 0.0000261016, speed: 2.0475 step/s
+09/13/2021 20:51:29 - INFO - __main__ - global step 1230/36816, epoch: 0, batch: 1229, rank_id: 0, loss: 1.152489, lr: 0.0000267536, speed: 2.0389 step/s
+09/13/2021 20:51:44 - INFO - __main__ - global step 1260/36816, epoch: 0, batch: 1259, rank_id: 0, loss: 1.142558, lr: 0.0000274056, speed: 1.9919 step/s
+09/13/2021 20:51:59 - INFO - __main__ - global step 1290/36816, epoch: 0, batch: 1289, rank_id: 0, loss: 1.095960, lr: 0.0000280576, speed: 2.0436 step/s
+09/13/2021 20:52:13 - INFO - __main__ - global step 1320/36816, epoch: 0, batch: 1319, rank_id: 0, loss: 1.137911, lr: 0.0000287096, speed: 2.0292 step/s
+09/13/2021 20:52:29 - INFO - __main__ - global step 1350/36816, epoch: 0, batch: 1349, rank_id: 0, loss: 1.106013, lr: 0.0000293616, speed: 1.8657 step/s
+09/13/2021 20:52:45 - INFO - __main__ - global step 1380/36816, epoch: 0, batch: 1379, rank_id: 0, loss: 1.133668, lr: 0.0000300136, speed: 1.9023 step/s
+09/13/2021 20:53:01 - INFO - __main__ - global step 1410/36816, epoch: 0, batch: 1409, rank_id: 0, loss: 1.059831, lr: 0.0000306656, speed: 1.9117 step/s
+09/13/2021 20:53:17 - INFO - __main__ - global step 1440/36816, epoch: 0, batch: 1439, rank_id: 0, loss: 1.146552, lr: 0.0000313176, speed: 1.8971 step/s
+09/13/2021 20:53:33 - INFO - __main__ - global step 1470/36816, epoch: 0, batch: 1469, rank_id: 0, loss: 1.093407, lr: 0.0000319696, speed: 1.8593 step/s
+09/13/2021 20:53:49 - INFO - __main__ - global step 1500/36816, epoch: 0, batch: 1499, rank_id: 0, loss: 1.097315, lr: 0.0000326216, speed: 1.8888 step/s
+09/13/2021 20:54:05 - INFO - __main__ - global step 1530/36816, epoch: 0, batch: 1529, rank_id: 0, loss: 1.091465, lr: 0.0000332736, speed: 1.8630 step/s
+09/13/2021 20:54:20 - INFO - __main__ - global step 1560/36816, epoch: 0, batch: 1559, rank_id: 0, loss: 1.004529, lr: 0.0000339256, speed: 1.9229 step/s
+09/13/2021 20:54:35 - INFO - __main__ - global step 1590/36816, epoch: 0, batch: 1589, rank_id: 0, loss: 0.948815, lr: 0.0000345776, speed: 2.1097 step/s
+09/13/2021 20:54:49 - INFO - __main__ - global step 1620/36816, epoch: 0, batch: 1619, rank_id: 0, loss: 1.114654, lr: 0.0000352296, speed: 2.0803 step/s
+09/13/2021 20:55:04 - INFO - __main__ - global step 1650/36816, epoch: 0, batch: 1649, rank_id: 0, loss: 1.140582, lr: 0.0000358816, speed: 2.0624 step/s
+09/13/2021 20:55:18 - INFO - __main__ - global step 1680/36816, epoch: 0, batch: 1679, rank_id: 0, loss: 1.091681, lr: 0.0000365336, speed: 2.0392 step/s
+09/13/2021 20:55:33 - INFO - __main__ - global step 1710/36816, epoch: 0, batch: 1709, rank_id: 0, loss: 0.931428, lr: 0.0000371855, speed: 2.0370 step/s
+09/13/2021 20:55:47 - INFO - __main__ - global step 1740/36816, epoch: 0, batch: 1739, rank_id: 0, loss: 1.003024, lr: 0.0000378375, speed: 2.0948 step/s
+09/13/2021 20:56:02 - INFO - __main__ - global step 1770/36816, epoch: 0, batch: 1769, rank_id: 0, loss: 1.054474, lr: 0.0000384895, speed: 2.0261 step/s
+09/13/2021 20:56:17 - INFO - __main__ - global step 1800/36816, epoch: 0, batch: 1799, rank_id: 0, loss: 0.920067, lr: 0.0000391415, speed: 2.0900 step/s
+09/13/2021 20:56:31 - INFO - __main__ - global step 1830/36816, epoch: 0, batch: 1829, rank_id: 0, loss: 0.962389, lr: 0.0000397935, speed: 2.0657 step/s
+09/13/2021 20:56:47 - INFO - __main__ - global step 1860/36816, epoch: 0, batch: 1859, rank_id: 0, loss: 1.054940, lr: 0.0000404455, speed: 1.9405 step/s
+09/13/2021 20:57:03 - INFO - __main__ - global step 1890/36816, epoch: 0, batch: 1889, rank_id: 0, loss: 0.877853, lr: 0.0000410975, speed: 1.8709 step/s
+09/13/2021 20:57:18 - INFO - __main__ - global step 1920/36816, epoch: 0, batch: 1919, rank_id: 0, loss: 0.827946, lr: 0.0000417495, speed: 1.9080 step/s
+09/13/2021 20:57:34 - INFO - __main__ - global step 1950/36816, epoch: 0, batch: 1949, rank_id: 0, loss: 1.049416, lr: 0.0000424015, speed: 1.8834 step/s
+09/13/2021 20:57:50 - INFO - __main__ - global step 1980/36816, epoch: 0, batch: 1979, rank_id: 0, loss: 0.871491, lr: 0.0000430535, speed: 1.8969 step/s
+09/13/2021 20:58:04 - INFO - __main__ - global step 2010/36816, epoch: 0, batch: 2009, rank_id: 0, loss: 0.869319, lr: 0.0000437055, speed: 2.1015 step/s
+09/13/2021 20:58:19 - INFO - __main__ - global step 2040/36816, epoch: 0, batch: 2039, rank_id: 0, loss: 0.827286, lr: 0.0000443575, speed: 1.9995 step/s
+09/13/2021 20:58:34 - INFO - __main__ - global step 2070/36816, epoch: 0, batch: 2069, rank_id: 0, loss: 0.845232, lr: 0.0000450095, speed: 2.0592 step/s
+09/13/2021 20:58:48 - INFO - __main__ - global step 2100/36816, epoch: 0, batch: 2099, rank_id: 0, loss: 0.813854, lr: 0.0000456615, speed: 2.0561 step/s
+09/13/2021 20:59:03 - INFO - __main__ - global step 2130/36816, epoch: 0, batch: 2129, rank_id: 0, loss: 0.752283, lr: 0.0000463135, speed: 2.0296 step/s
+09/13/2021 20:59:18 - INFO - __main__ - global step 2160/36816, epoch: 0, batch: 2159, rank_id: 0, loss: 0.799103, lr: 0.0000469655, speed: 2.0124 step/s
+09/13/2021 20:59:33 - INFO - __main__ - global step 2190/36816, epoch: 0, batch: 2189, rank_id: 0, loss: 0.782772, lr: 0.0000476175, speed: 2.0282 step/s
+09/13/2021 20:59:47 - INFO - __main__ - global step 2220/36816, epoch: 0, batch: 2219, rank_id: 0, loss: 0.746392, lr: 0.0000482695, speed: 2.0630 step/s
+09/13/2021 21:00:02 - INFO - __main__ - global step 2250/36816, epoch: 0, batch: 2249, rank_id: 0, loss: 0.650347, lr: 0.0000489215, speed: 2.0558 step/s
+09/13/2021 21:00:17 - INFO - __main__ - global step 2280/36816, epoch: 0, batch: 2279, rank_id: 0, loss: 0.825042, lr: 0.0000495735, speed: 2.0052 step/s
+09/13/2021 21:00:32 - INFO - __main__ - global step 2310/36816, epoch: 0, batch: 2309, rank_id: 0, loss: 0.851846, lr: 0.0000502255, speed: 2.0139 step/s
+09/13/2021 21:00:46 - INFO - __main__ - global step 2340/36816, epoch: 0, batch: 2339, rank_id: 0, loss: 0.687552, lr: 0.0000508775, speed: 2.0618 step/s
+09/13/2021 21:01:01 - INFO - __main__ - global step 2370/36816, epoch: 0, batch: 2369, rank_id: 0, loss: 0.585347, lr: 0.0000515295, speed: 2.0718 step/s
+09/13/2021 21:01:16 - INFO - __main__ - global step 2400/36816, epoch: 0, batch: 2399, rank_id: 0, loss: 0.636109, lr: 0.0000521815, speed: 2.0023 step/s
+09/13/2021 21:01:32 - INFO - __main__ - global step 2430/36816, epoch: 0, batch: 2429, rank_id: 0, loss: 0.704600, lr: 0.0000528335, speed: 1.9073 step/s
+09/13/2021 21:01:47 - INFO - __main__ - global step 2460/36816, epoch: 0, batch: 2459, rank_id: 0, loss: 0.675034, lr: 0.0000534855, speed: 1.9021 step/s
+09/13/2021 21:02:04 - INFO - __main__ - global step 2490/36816, epoch: 0, batch: 2489, rank_id: 0, loss: 0.483752, lr: 0.0000541375, speed: 1.8689 step/s
+09/13/2021 21:02:20 - INFO - __main__ - global step 2520/36816, epoch: 0, batch: 2519, rank_id: 0, loss: 0.523948, lr: 0.0000547895, speed: 1.8687 step/s
+09/13/2021 21:02:35 - INFO - __main__ - global step 2550/36816, epoch: 0, batch: 2549, rank_id: 0, loss: 0.608907, lr: 0.0000554415, speed: 1.9892 step/s
+09/13/2021 21:02:50 - INFO - __main__ - global step 2580/36816, epoch: 0, batch: 2579, rank_id: 0, loss: 0.686163, lr: 0.0000560935, speed: 2.0116 step/s
+09/13/2021 21:03:04 - INFO - __main__ - global step 2610/36816, epoch: 0, batch: 2609, rank_id: 0, loss: 0.745736, lr: 0.0000567454, speed: 2.0356 step/s
+09/13/2021 21:03:19 - INFO - __main__ - global step 2640/36816, epoch: 0, batch: 2639, rank_id: 0, loss: 0.474406, lr: 0.0000573974, speed: 2.0697 step/s
+09/13/2021 21:03:34 - INFO - __main__ - global step 2670/36816, epoch: 0, batch: 2669, rank_id: 0, loss: 0.683581, lr: 0.0000580494, speed: 2.0045 step/s
+09/13/2021 21:03:50 - INFO - __main__ - global step 2700/36816, epoch: 0, batch: 2699, rank_id: 0, loss: 0.559303, lr: 0.0000587014, speed: 1.8267 step/s
+09/13/2021 21:04:06 - INFO - __main__ - global step 2730/36816, epoch: 0, batch: 2729, rank_id: 0, loss: 0.573187, lr: 0.0000593534, speed: 1.8622 step/s
+09/13/2021 21:04:22 - INFO - __main__ - global step 2760/36816, epoch: 0, batch: 2759, rank_id: 0, loss: 0.679405, lr: 0.0000600054, speed: 1.9359 step/s
+09/13/2021 21:04:37 - INFO - __main__ - global step 2790/36816, epoch: 0, batch: 2789, rank_id: 0, loss: 0.510749, lr: 0.0000606574, speed: 2.0365 step/s
+09/13/2021 21:04:51 - INFO - __main__ - global step 2820/36816, epoch: 0, batch: 2819, rank_id: 0, loss: 0.437602, lr: 0.0000613094, speed: 2.0569 step/s
+09/13/2021 21:05:05 - INFO - __main__ - global step 2850/36816, epoch: 0, batch: 2849, rank_id: 0, loss: 0.602141, lr: 0.0000619614, speed: 2.0968 step/s
+09/13/2021 21:05:20 - INFO - __main__ - global step 2880/36816, epoch: 0, batch: 2879, rank_id: 0, loss: 0.640334, lr: 0.0000626134, speed: 2.0919 step/s
+09/13/2021 21:05:34 - INFO - __main__ - global step 2910/36816, epoch: 0, batch: 2909, rank_id: 0, loss: 0.617086, lr: 0.0000632654, speed: 2.0412 step/s
+09/13/2021 21:05:49 - INFO - __main__ - global step 2940/36816, epoch: 0, batch: 2939, rank_id: 0, loss: 0.542527, lr: 0.0000639174, speed: 2.0597 step/s
+09/13/2021 21:06:04 - INFO - __main__ - global step 2970/36816, epoch: 0, batch: 2969, rank_id: 0, loss: 0.546595, lr: 0.0000645694, speed: 2.0457 step/s
+09/13/2021 21:06:19 - INFO - __main__ - global step 3000/36816, epoch: 0, batch: 2999, rank_id: 0, loss: 0.609412, lr: 0.0000652214, speed: 2.0234 step/s
+09/13/2021 21:06:33 - INFO - __main__ - global step 3030/36816, epoch: 0, batch: 3029, rank_id: 0, loss: 0.574280, lr: 0.0000658734, speed: 2.0510 step/s
+09/13/2021 21:06:48 - INFO - __main__ - global step 3060/36816, epoch: 0, batch: 3059, rank_id: 0, loss: 0.496884, lr: 0.0000665254, speed: 2.0756 step/s
+09/13/2021 21:07:02 - INFO - __main__ - global step 3090/36816, epoch: 0, batch: 3089, rank_id: 0, loss: 0.508896, lr: 0.0000671774, speed: 2.0691 step/s
+09/13/2021 21:07:17 - INFO - __main__ - global step 3120/36816, epoch: 0, batch: 3119, rank_id: 0, loss: 0.480288, lr: 0.0000678294, speed: 1.9891 step/s
+09/13/2021 21:07:32 - INFO - __main__ - global step 3150/36816, epoch: 0, batch: 3149, rank_id: 0, loss: 0.626603, lr: 0.0000684814, speed: 2.0087 step/s
+09/13/2021 21:07:47 - INFO - __main__ - global step 3180/36816, epoch: 0, batch: 3179, rank_id: 0, loss: 0.640384, lr: 0.0000691334, speed: 2.0011 step/s
+09/13/2021 21:08:02 - INFO - __main__ - global step 3210/36816, epoch: 0, batch: 3209, rank_id: 0, loss: 0.573716, lr: 0.0000697854, speed: 2.0110 step/s
+09/13/2021 21:08:18 - INFO - __main__ - global step 3240/36816, epoch: 0, batch: 3239, rank_id: 0, loss: 0.494214, lr: 0.0000704374, speed: 1.8297 step/s
+09/13/2021 21:08:35 - INFO - __main__ - global step 3270/36816, epoch: 0, batch: 3269, rank_id: 0, loss: 0.550610, lr: 0.0000710894, speed: 1.8360 step/s
+09/13/2021 21:08:51 - INFO - __main__ - global step 3300/36816, epoch: 0, batch: 3299, rank_id: 0, loss: 0.453648, lr: 0.0000717414, speed: 1.8894 step/s
+09/13/2021 21:09:06 - INFO - __main__ - global step 3330/36816, epoch: 0, batch: 3329, rank_id: 0, loss: 0.573952, lr: 0.0000723934, speed: 2.0050 step/s
+09/13/2021 21:09:20 - INFO - __main__ - global step 3360/36816, epoch: 0, batch: 3359, rank_id: 0, loss: 0.995244, lr: 0.0000730454, speed: 2.0807 step/s
+09/13/2021 21:09:34 - INFO - __main__ - global step 3390/36816, epoch: 0, batch: 3389, rank_id: 0, loss: 0.558481, lr: 0.0000736974, speed: 2.1052 step/s
+09/13/2021 21:09:49 - INFO - __main__ - global step 3420/36816, epoch: 0, batch: 3419, rank_id: 0, loss: 0.495646, lr: 0.0000743494, speed: 2.0524 step/s
+09/13/2021 21:10:04 - INFO - __main__ - global step 3450/36816, epoch: 0, batch: 3449, rank_id: 0, loss: 0.597903, lr: 0.0000750014, speed: 2.0268 step/s
+09/13/2021 21:10:18 - INFO - __main__ - global step 3480/36816, epoch: 0, batch: 3479, rank_id: 0, loss: 0.513050, lr: 0.0000756534, speed: 2.0598 step/s
+09/13/2021 21:10:33 - INFO - __main__ - global step 3510/36816, epoch: 0, batch: 3509, rank_id: 0, loss: 0.643580, lr: 0.0000763054, speed: 2.0805 step/s
+09/13/2021 21:10:48 - INFO - __main__ - global step 3540/36816, epoch: 0, batch: 3539, rank_id: 0, loss: 0.580320, lr: 0.0000769573, speed: 1.9846 step/s
+09/13/2021 21:11:02 - INFO - __main__ - global step 3570/36816, epoch: 0, batch: 3569, rank_id: 0, loss: 0.812650, lr: 0.0000776093, speed: 2.0604 step/s
+09/13/2021 21:11:17 - INFO - __main__ - global step 3600/36816, epoch: 0, batch: 3599, rank_id: 0, loss: 0.462819, lr: 0.0000782613, speed: 2.0605 step/s
+09/13/2021 21:11:17 - INFO - __main__ - ====================================================================================================
+09/13/2021 21:11:17 - INFO - __main__ - m_acc:
+09/13/2021 21:11:28 - INFO - __main__ - eval loss: 0.564575, acc: 0.7802343352012227, 
+09/13/2021 21:11:28 - INFO - __main__ - mm_acc:
+09/13/2021 21:11:39 - INFO - __main__ - eval loss: 0.541157, acc: 0.7853946297803092, 
+09/13/2021 21:11:39 - INFO - __main__ - eval done total : 22.54874300956726 s
+09/13/2021 21:11:54 - INFO - __main__ - global step 3630/36816, epoch: 0, batch: 3629, rank_id: 0, loss: 0.606653, lr: 0.0000789133, speed: 0.8052 step/s
+09/13/2021 21:12:08 - INFO - __main__ - global step 3660/36816, epoch: 0, batch: 3659, rank_id: 0, loss: 0.619953, lr: 0.0000795653, speed: 2.1052 step/s
+09/13/2021 21:12:23 - INFO - __main__ - global step 3690/36816, epoch: 0, batch: 3689, rank_id: 0, loss: 0.695673, lr: 0.0000800000, speed: 2.0619 step/s
+09/13/2021 21:12:38 - INFO - __main__ - global step 3720/36816, epoch: 0, batch: 3719, rank_id: 0, loss: 0.601057, lr: 0.0000799996, speed: 2.0453 step/s
+09/13/2021 21:12:52 - INFO - __main__ - global step 3750/36816, epoch: 0, batch: 3749, rank_id: 0, loss: 0.638006, lr: 0.0000799989, speed: 2.0674 step/s
+09/13/2021 21:13:07 - INFO - __main__ - global step 3780/36816, epoch: 0, batch: 3779, rank_id: 0, loss: 0.607589, lr: 0.0000799977, speed: 2.0910 step/s
+09/13/2021 21:13:21 - INFO - __main__ - global step 3810/36816, epoch: 0, batch: 3809, rank_id: 0, loss: 0.555788, lr: 0.0000799962, speed: 2.0366 step/s
+09/13/2021 21:13:37 - INFO - __main__ - global step 3840/36816, epoch: 0, batch: 3839, rank_id: 0, loss: 0.508743, lr: 0.0000799942, speed: 1.9432 step/s
+09/13/2021 21:13:37 - INFO - __main__ - ====================================================================================================
+09/13/2021 21:13:37 - INFO - __main__ - m_acc:
+09/13/2021 21:13:48 - INFO - __main__ - eval loss: 0.508455, acc: 0.7903209373408049, 
+09/13/2021 21:13:48 - INFO - __main__ - mm_acc:
+09/13/2021 21:14:00 - INFO - __main__ - eval loss: 0.519942, acc: 0.7930227827502034, 
+09/13/2021 21:14:00 - INFO - __main__ - eval done total : 22.87143063545227 s
+09/13/2021 21:14:15 - INFO - __main__ - global step 3870/36816, epoch: 0, batch: 3869, rank_id: 0, loss: 0.556556, lr: 0.0000799918, speed: 0.7919 step/s
+09/13/2021 21:14:30 - INFO - __main__ - global step 3900/36816, epoch: 0, batch: 3899, rank_id: 0, loss: 0.435465, lr: 0.0000799891, speed: 1.9522 step/s
+09/13/2021 21:14:45 - INFO - __main__ - global step 3930/36816, epoch: 0, batch: 3929, rank_id: 0, loss: 0.464667, lr: 0.0000799859, speed: 2.0214 step/s
+09/13/2021 21:15:00 - INFO - __main__ - global step 3960/36816, epoch: 0, batch: 3959, rank_id: 0, loss: 0.736978, lr: 0.0000799823, speed: 2.0083 step/s
+09/13/2021 21:15:15 - INFO - __main__ - global step 3990/36816, epoch: 0, batch: 3989, rank_id: 0, loss: 0.606582, lr: 0.0000799783, speed: 1.9795 step/s
+09/13/2021 21:15:30 - INFO - __main__ - global step 4020/36816, epoch: 0, batch: 4019, rank_id: 0, loss: 0.522313, lr: 0.0000799739, speed: 2.0211 step/s
+09/13/2021 21:15:45 - INFO - __main__ - global step 4050/36816, epoch: 0, batch: 4049, rank_id: 0, loss: 0.565797, lr: 0.0000799690, speed: 1.9785 step/s
+09/13/2021 21:15:59 - INFO - __main__ - global step 4080/36816, epoch: 0, batch: 4079, rank_id: 0, loss: 0.597977, lr: 0.0000799638, speed: 2.0671 step/s
+09/13/2021 21:15:59 - INFO - __main__ - ====================================================================================================
+09/13/2021 21:15:59 - INFO - __main__ - m_acc:
+09/13/2021 21:16:11 - INFO - __main__ - eval loss: 0.572707, acc: 0.7776872134488029, 
+09/13/2021 21:16:11 - INFO - __main__ - mm_acc:
+09/13/2021 21:16:22 - INFO - __main__ - eval loss: 0.567618, acc: 0.7806143205858421, 
+09/13/2021 21:16:22 - INFO - __main__ - eval done total : 22.686445236206055 s
+09/13/2021 21:16:36 - INFO - __main__ - global step 4110/36816, epoch: 0, batch: 4109, rank_id: 0, loss: 0.496082, lr: 0.0000799582, speed: 0.8089 step/s
+09/13/2021 21:16:52 - INFO - __main__ - global step 4140/36816, epoch: 0, batch: 4139, rank_id: 0, loss: 0.626053, lr: 0.0000799522, speed: 1.9856 step/s
+09/13/2021 21:17:07 - INFO - __main__ - global step 4170/36816, epoch: 0, batch: 4169, rank_id: 0, loss: 0.492049, lr: 0.0000799457, speed: 1.9820 step/s
+09/13/2021 21:17:22 - INFO - __main__ - global step 4200/36816, epoch: 0, batch: 4199, rank_id: 0, loss: 0.412318, lr: 0.0000799389, speed: 2.0265 step/s
+09/13/2021 21:17:36 - INFO - __main__ - global step 4230/36816, epoch: 0, batch: 4229, rank_id: 0, loss: 0.368537, lr: 0.0000799316, speed: 2.0105 step/s
+09/13/2021 21:17:52 - INFO - __main__ - global step 4260/36816, epoch: 0, batch: 4259, rank_id: 0, loss: 0.530363, lr: 0.0000799240, speed: 1.9919 step/s
+09/13/2021 21:18:06 - INFO - __main__ - global step 4290/36816, epoch: 0, batch: 4289, rank_id: 0, loss: 0.401173, lr: 0.0000799159, speed: 2.0161 step/s
+09/13/2021 21:18:21 - INFO - __main__ - global step 4320/36816, epoch: 0, batch: 4319, rank_id: 0, loss: 0.718642, lr: 0.0000799074, speed: 1.9893 step/s
+09/13/2021 21:18:21 - INFO - __main__ - ====================================================================================================
+09/13/2021 21:18:21 - INFO - __main__ - m_acc:
+09/13/2021 21:18:33 - INFO - __main__ - eval loss: 0.456805, acc: 0.7921548650025472, 
+09/13/2021 21:18:33 - INFO - __main__ - mm_acc:
+09/13/2021 21:18:44 - INFO - __main__ - eval loss: 0.515520, acc: 0.7939381611065908, 
+09/13/2021 21:18:44 - INFO - __main__ - eval done total : 22.573935985565186 s
+09/13/2021 21:18:59 - INFO - __main__ - global step 4350/36816, epoch: 0, batch: 4349, rank_id: 0, loss: 0.620035, lr: 0.0000798985, speed: 0.8067 step/s
+09/13/2021 21:19:13 - INFO - __main__ - global step 4380/36816, epoch: 0, batch: 4379, rank_id: 0, loss: 0.532547, lr: 0.0000798893, speed: 2.0852 step/s
+09/13/2021 21:19:28 - INFO - __main__ - global step 4410/36816, epoch: 0, batch: 4409, rank_id: 0, loss: 0.539923, lr: 0.0000798796, speed: 2.0474 step/s
+09/13/2021 21:19:42 - INFO - __main__ - global step 4440/36816, epoch: 0, batch: 4439, rank_id: 0, loss: 0.625329, lr: 0.0000798695, speed: 2.0688 step/s
+09/13/2021 21:19:57 - INFO - __main__ - global step 4470/36816, epoch: 0, batch: 4469, rank_id: 0, loss: 0.584033, lr: 0.0000798590, speed: 2.0781 step/s
+09/13/2021 21:20:11 - INFO - __main__ - global step 4500/36816, epoch: 0, batch: 4499, rank_id: 0, loss: 0.693816, lr: 0.0000798481, speed: 2.0749 step/s
+09/13/2021 21:20:26 - INFO - __main__ - global step 4530/36816, epoch: 0, batch: 4529, rank_id: 0, loss: 0.446855, lr: 0.0000798367, speed: 2.0417 step/s
+09/13/2021 21:20:40 - INFO - __main__ - global step 4560/36816, epoch: 0, batch: 4559, rank_id: 0, loss: 0.571096, lr: 0.0000798250, speed: 2.0521 step/s
+09/13/2021 21:20:40 - INFO - __main__ - ====================================================================================================
+09/13/2021 21:20:40 - INFO - __main__ - m_acc:
+09/13/2021 21:20:51 - INFO - __main__ - eval loss: 0.455963, acc: 0.7998981151299032, 
+09/13/2021 21:20:51 - INFO - __main__ - mm_acc:
+09/13/2021 21:21:02 - INFO - __main__ - eval loss: 0.556300, acc: 0.7985150528885273, 
+09/13/2021 21:21:02 - INFO - __main__ - eval done total : 21.614911794662476 s
+09/13/2021 21:21:17 - INFO - __main__ - global step 4590/36816, epoch: 0, batch: 4589, rank_id: 0, loss: 0.448844, lr: 0.0000798129, speed: 0.8287 step/s
+09/13/2021 21:21:31 - INFO - __main__ - global step 4620/36816, epoch: 0, batch: 4619, rank_id: 0, loss: 0.615498, lr: 0.0000798004, speed: 2.0334 step/s
+09/13/2021 21:21:46 - INFO - __main__ - global step 4650/36816, epoch: 0, batch: 4649, rank_id: 0, loss: 0.530776, lr: 0.0000797874, speed: 2.0753 step/s
+09/13/2021 21:22:00 - INFO - __main__ - global step 4680/36816, epoch: 0, batch: 4679, rank_id: 0, loss: 0.460213, lr: 0.0000797741, speed: 2.0695 step/s
+09/13/2021 21:22:15 - INFO - __main__ - global step 4710/36816, epoch: 0, batch: 4709, rank_id: 0, loss: 0.611488, lr: 0.0000797604, speed: 2.0306 step/s
+09/13/2021 21:22:30 - INFO - __main__ - global step 4740/36816, epoch: 0, batch: 4739, rank_id: 0, loss: 0.656203, lr: 0.0000797462, speed: 2.0256 step/s
+09/13/2021 21:22:44 - INFO - __main__ - global step 4770/36816, epoch: 0, batch: 4769, rank_id: 0, loss: 0.701423, lr: 0.0000797317, speed: 2.0680 step/s
+09/13/2021 21:22:59 - INFO - __main__ - global step 4800/36816, epoch: 0, batch: 4799, rank_id: 0, loss: 0.388273, lr: 0.0000797167, speed: 2.0727 step/s
+09/13/2021 21:22:59 - INFO - __main__ - ====================================================================================================
+09/13/2021 21:22:59 - INFO - __main__ - m_acc:
+09/13/2021 21:23:10 - INFO - __main__ - eval loss: 0.436520, acc: 0.7847172694854814, 
+09/13/2021 21:23:10 - INFO - __main__ - mm_acc:
+09/13/2021 21:23:22 - INFO - __main__ - eval loss: 0.626153, acc: 0.7871236777868186, 
+09/13/2021 21:23:22 - INFO - __main__ - eval done total : 22.591569423675537 s
+09/13/2021 21:23:37 - INFO - __main__ - global step 4830/36816, epoch: 0, batch: 4829, rank_id: 0, loss: 0.554010, lr: 0.0000797013, speed: 0.7897 step/s
+09/13/2021 21:23:52 - INFO - __main__ - global step 4860/36816, epoch: 0, batch: 4859, rank_id: 0, loss: 0.682309, lr: 0.0000796856, speed: 2.0511 step/s
+09/13/2021 21:24:06 - INFO - __main__ - global step 4890/36816, epoch: 0, batch: 4889, rank_id: 0, loss: 0.594234, lr: 0.0000796694, speed: 2.0746 step/s
+09/13/2021 21:24:20 - INFO - __main__ - global step 4920/36816, epoch: 0, batch: 4919, rank_id: 0, loss: 0.619776, lr: 0.0000796528, speed: 2.0941 step/s
+09/13/2021 21:24:35 - INFO - __main__ - global step 4950/36816, epoch: 0, batch: 4949, rank_id: 0, loss: 0.405437, lr: 0.0000796359, speed: 2.0392 step/s
+09/13/2021 21:24:50 - INFO - __main__ - global step 4980/36816, epoch: 0, batch: 4979, rank_id: 0, loss: 0.527884, lr: 0.0000796185, speed: 1.9997 step/s
+09/13/2021 21:25:05 - INFO - __main__ - global step 5010/36816, epoch: 0, batch: 5009, rank_id: 0, loss: 0.507993, lr: 0.0000796007, speed: 1.9929 step/s
+09/13/2021 21:25:20 - INFO - __main__ - global step 5040/36816, epoch: 0, batch: 5039, rank_id: 0, loss: 0.569965, lr: 0.0000795825, speed: 2.0209 step/s
+09/13/2021 21:25:20 - INFO - __main__ - ====================================================================================================
+09/13/2021 21:25:20 - INFO - __main__ - m_acc:
+09/13/2021 21:25:31 - INFO - __main__ - eval loss: 0.408847, acc: 0.7992868059093224, 
+09/13/2021 21:25:31 - INFO - __main__ - mm_acc:
+09/13/2021 21:25:42 - INFO - __main__ - eval loss: 0.512333, acc: 0.8069568755085436, 
+09/13/2021 21:25:42 - INFO - __main__ - eval done total : 22.048043727874756 s
+09/13/2021 21:25:57 - INFO - __main__ - global step 5070/36816, epoch: 0, batch: 5069, rank_id: 0, loss: 0.533922, lr: 0.0000795639, speed: 0.8145 step/s
+09/13/2021 21:26:11 - INFO - __main__ - global step 5100/36816, epoch: 0, batch: 5099, rank_id: 0, loss: 0.532268, lr: 0.0000795449, speed: 2.0562 step/s
+09/13/2021 21:26:26 - INFO - __main__ - global step 5130/36816, epoch: 0, batch: 5129, rank_id: 0, loss: 0.735078, lr: 0.0000795256, speed: 2.0929 step/s
+09/13/2021 21:26:40 - INFO - __main__ - global step 5160/36816, epoch: 0, batch: 5159, rank_id: 0, loss: 0.350487, lr: 0.0000795058, speed: 2.0468 step/s
+09/13/2021 21:26:55 - INFO - __main__ - global step 5190/36816, epoch: 0, batch: 5189, rank_id: 0, loss: 0.408269, lr: 0.0000794856, speed: 2.0309 step/s
+09/13/2021 21:27:10 - INFO - __main__ - global step 5220/36816, epoch: 0, batch: 5219, rank_id: 0, loss: 0.556688, lr: 0.0000794650, speed: 2.0720 step/s
+09/13/2021 21:27:24 - INFO - __main__ - global step 5250/36816, epoch: 0, batch: 5249, rank_id: 0, loss: 0.652937, lr: 0.0000794440, speed: 2.0477 step/s
+09/13/2021 21:27:39 - INFO - __main__ - global step 5280/36816, epoch: 0, batch: 5279, rank_id: 0, loss: 0.410398, lr: 0.0000794226, speed: 2.0927 step/s
+09/13/2021 21:27:39 - INFO - __main__ - ====================================================================================================
+09/13/2021 21:27:39 - INFO - __main__ - m_acc:
+09/13/2021 21:27:50 - INFO - __main__ - eval loss: 0.454388, acc: 0.7890983188996434, 
+09/13/2021 21:27:50 - INFO - __main__ - mm_acc:
+09/13/2021 21:28:01 - INFO - __main__ - eval loss: 0.530260, acc: 0.7910903173311635, 
+09/13/2021 21:28:01 - INFO - __main__ - eval done total : 21.981030225753784 s
+09/13/2021 21:28:15 - INFO - __main__ - global step 5310/36816, epoch: 0, batch: 5309, rank_id: 0, loss: 0.687778, lr: 0.0000794008, speed: 0.8152 step/s
+09/13/2021 21:28:30 - INFO - __main__ - global step 5340/36816, epoch: 0, batch: 5339, rank_id: 0, loss: 0.481954, lr: 0.0000793786, speed: 2.0335 step/s
+09/13/2021 21:28:45 - INFO - __main__ - global step 5370/36816, epoch: 0, batch: 5369, rank_id: 0, loss: 0.491154, lr: 0.0000793560, speed: 2.0449 step/s
+09/13/2021 21:28:59 - INFO - __main__ - global step 5400/36816, epoch: 0, batch: 5399, rank_id: 0, loss: 0.484162, lr: 0.0000793330, speed: 2.0629 step/s
+09/13/2021 21:29:14 - INFO - __main__ - global step 5430/36816, epoch: 0, batch: 5429, rank_id: 0, loss: 0.581282, lr: 0.0000793095, speed: 2.0309 step/s
+09/13/2021 21:29:29 - INFO - __main__ - global step 5460/36816, epoch: 0, batch: 5459, rank_id: 0, loss: 0.538078, lr: 0.0000792857, speed: 2.0689 step/s
+09/13/2021 21:29:43 - INFO - __main__ - global step 5490/36816, epoch: 0, batch: 5489, rank_id: 0, loss: 0.718069, lr: 0.0000792615, speed: 2.0766 step/s
+09/13/2021 21:29:58 - INFO - __main__ - global step 5520/36816, epoch: 0, batch: 5519, rank_id: 0, loss: 0.375802, lr: 0.0000792369, speed: 2.0458 step/s
+09/13/2021 21:29:58 - INFO - __main__ - ====================================================================================================
+09/13/2021 21:29:58 - INFO - __main__ - m_acc:
+09/13/2021 21:30:09 - INFO - __main__ - eval loss: 0.472704, acc: 0.798573611818645, 
+09/13/2021 21:30:09 - INFO - __main__ - mm_acc:
+09/13/2021 21:30:20 - INFO - __main__ - eval loss: 0.484360, acc: 0.8024816924328723, 
+09/13/2021 21:30:20 - INFO - __main__ - eval done total : 21.79775857925415 s
+09/13/2021 21:30:35 - INFO - __main__ - global step 5550/36816, epoch: 0, batch: 5549, rank_id: 0, loss: 0.441748, lr: 0.0000792119, speed: 0.8043 step/s
+09/13/2021 21:30:50 - INFO - __main__ - global step 5580/36816, epoch: 0, batch: 5579, rank_id: 0, loss: 0.504628, lr: 0.0000791865, speed: 1.9515 step/s
+09/13/2021 21:31:06 - INFO - __main__ - global step 5610/36816, epoch: 0, batch: 5609, rank_id: 0, loss: 0.489283, lr: 0.0000791607, speed: 1.9444 step/s
+09/13/2021 21:31:21 - INFO - __main__ - global step 5640/36816, epoch: 0, batch: 5639, rank_id: 0, loss: 0.470006, lr: 0.0000791345, speed: 1.9408 step/s
+09/13/2021 21:31:36 - INFO - __main__ - global step 5670/36816, epoch: 0, batch: 5669, rank_id: 0, loss: 0.456972, lr: 0.0000791079, speed: 2.0611 step/s
+09/13/2021 21:31:51 - INFO - __main__ - global step 5700/36816, epoch: 0, batch: 5699, rank_id: 0, loss: 0.708439, lr: 0.0000790809, speed: 2.0311 step/s
+09/13/2021 21:32:05 - INFO - __main__ - global step 5730/36816, epoch: 0, batch: 5729, rank_id: 0, loss: 0.397242, lr: 0.0000790536, speed: 2.0566 step/s
+09/13/2021 21:32:20 - INFO - __main__ - global step 5760/36816, epoch: 0, batch: 5759, rank_id: 0, loss: 0.589818, lr: 0.0000790258, speed: 2.0748 step/s
+09/13/2021 21:32:20 - INFO - __main__ - ====================================================================================================
+09/13/2021 21:32:20 - INFO - __main__ - m_acc:
+09/13/2021 21:32:31 - INFO - __main__ - eval loss: 0.376998, acc: 0.7979623025980642, 
+09/13/2021 21:32:31 - INFO - __main__ - mm_acc:
+09/13/2021 21:32:42 - INFO - __main__ - eval loss: 0.509561, acc: 0.8048209926769732, 
+09/13/2021 21:32:42 - INFO - __main__ - eval done total : 21.881445169448853 s
+09/13/2021 21:32:56 - INFO - __main__ - global step 5790/36816, epoch: 0, batch: 5789, rank_id: 0, loss: 0.535350, lr: 0.0000789976, speed: 0.8189 step/s
+09/13/2021 21:33:11 - INFO - __main__ - global step 5820/36816, epoch: 0, batch: 5819, rank_id: 0, loss: 0.536704, lr: 0.0000789690, speed: 2.0654 step/s
+09/13/2021 21:33:26 - INFO - __main__ - global step 5850/36816, epoch: 0, batch: 5849, rank_id: 0, loss: 0.702155, lr: 0.0000789400, speed: 1.9319 step/s
+09/13/2021 21:33:42 - INFO - __main__ - global step 5880/36816, epoch: 0, batch: 5879, rank_id: 0, loss: 0.448404, lr: 0.0000789106, speed: 1.8913 step/s
+09/13/2021 21:33:58 - INFO - __main__ - global step 5910/36816, epoch: 0, batch: 5909, rank_id: 0, loss: 0.386751, lr: 0.0000788809, speed: 1.9165 step/s
+09/13/2021 21:34:13 - INFO - __main__ - global step 5940/36816, epoch: 0, batch: 5939, rank_id: 0, loss: 0.580572, lr: 0.0000788507, speed: 1.9437 step/s
+09/13/2021 21:34:28 - INFO - __main__ - global step 5970/36816, epoch: 0, batch: 5969, rank_id: 0, loss: 0.435789, lr: 0.0000788201, speed: 2.0366 step/s
+09/13/2021 21:34:43 - INFO - __main__ - global step 6000/36816, epoch: 0, batch: 5999, rank_id: 0, loss: 0.416967, lr: 0.0000787892, speed: 2.0111 step/s
+09/13/2021 21:34:43 - INFO - __main__ - ====================================================================================================
+09/13/2021 21:34:43 - INFO - __main__ - m_acc:
+09/13/2021 21:34:54 - INFO - __main__ - eval loss: 0.366929, acc: 0.8084564442180336, 
+09/13/2021 21:34:54 - INFO - __main__ - mm_acc:
+09/13/2021 21:35:05 - INFO - __main__ - eval loss: 0.486080, acc: 0.8108218063466233, 
+09/13/2021 21:35:05 - INFO - __main__ - eval done total : 22.212839126586914 s
+09/13/2021 21:35:20 - INFO - __main__ - global step 6030/36816, epoch: 0, batch: 6029, rank_id: 0, loss: 0.300477, lr: 0.0000787578, speed: 0.8018 step/s
+09/13/2021 21:35:36 - INFO - __main__ - global step 6060/36816, epoch: 0, batch: 6059, rank_id: 0, loss: 0.465114, lr: 0.0000787261, speed: 1.9745 step/s
+09/13/2021 21:35:50 - INFO - __main__ - global step 6090/36816, epoch: 0, batch: 6089, rank_id: 0, loss: 0.595830, lr: 0.0000786940, speed: 2.0307 step/s
+09/13/2021 21:36:05 - INFO - __main__ - global step 6120/36816, epoch: 0, batch: 6119, rank_id: 0, loss: 0.612390, lr: 0.0000786614, speed: 2.0493 step/s
+09/13/2021 21:36:20 - INFO - __main__ - global step 6150/36816, epoch: 1, batch: 13, rank_id: 0, loss: 0.451762, lr: 0.0000786285, speed: 2.0063 step/s
+09/13/2021 21:36:35 - INFO - __main__ - global step 6180/36816, epoch: 1, batch: 43, rank_id: 0, loss: 0.472859, lr: 0.0000785952, speed: 2.0458 step/s
+09/13/2021 21:36:49 - INFO - __main__ - global step 6210/36816, epoch: 1, batch: 73, rank_id: 0, loss: 0.599540, lr: 0.0000785615, speed: 2.0400 step/s
+09/13/2021 21:37:04 - INFO - __main__ - global step 6240/36816, epoch: 1, batch: 103, rank_id: 0, loss: 0.397009, lr: 0.0000785274, speed: 2.0652 step/s
+09/13/2021 21:37:04 - INFO - __main__ - ====================================================================================================
+09/13/2021 21:37:04 - INFO - __main__ - m_acc:
+09/13/2021 21:37:15 - INFO - __main__ - eval loss: 0.401928, acc: 0.8118186449312277, 
+09/13/2021 21:37:15 - INFO - __main__ - mm_acc:
+09/13/2021 21:37:28 - INFO - __main__ - eval loss: 0.552690, acc: 0.8062449145646867, 
+09/13/2021 21:37:28 - INFO - __main__ - eval done total : 24.534490823745728 s
+09/13/2021 21:37:44 - INFO - __main__ - global step 6270/36816, epoch: 1, batch: 133, rank_id: 0, loss: 0.592712, lr: 0.0000784929, speed: 0.7558 step/s
+09/13/2021 21:37:58 - INFO - __main__ - global step 6300/36816, epoch: 1, batch: 163, rank_id: 0, loss: 0.565268, lr: 0.0000784580, speed: 2.0245 step/s
+09/13/2021 21:38:13 - INFO - __main__ - global step 6330/36816, epoch: 1, batch: 193, rank_id: 0, loss: 0.366550, lr: 0.0000784227, speed: 2.0413 step/s
+09/13/2021 21:38:28 - INFO - __main__ - global step 6360/36816, epoch: 1, batch: 223, rank_id: 0, loss: 0.479062, lr: 0.0000783870, speed: 1.9811 step/s
+09/13/2021 21:38:43 - INFO - __main__ - global step 6390/36816, epoch: 1, batch: 253, rank_id: 0, loss: 0.376105, lr: 0.0000783510, speed: 2.0183 step/s
+09/13/2021 21:38:58 - INFO - __main__ - global step 6420/36816, epoch: 1, batch: 283, rank_id: 0, loss: 0.383148, lr: 0.0000783145, speed: 2.0787 step/s
+09/13/2021 21:39:12 - INFO - __main__ - global step 6450/36816, epoch: 1, batch: 313, rank_id: 0, loss: 0.468508, lr: 0.0000782777, speed: 2.0578 step/s
+09/13/2021 21:39:27 - INFO - __main__ - global step 6480/36816, epoch: 1, batch: 343, rank_id: 0, loss: 0.447094, lr: 0.0000782404, speed: 2.0530 step/s
+09/13/2021 21:39:27 - INFO - __main__ - ====================================================================================================
+09/13/2021 21:39:27 - INFO - __main__ - m_acc:
+09/13/2021 21:39:38 - INFO - __main__ - eval loss: 0.413673, acc: 0.7988792664289353, 
+09/13/2021 21:39:38 - INFO - __main__ - mm_acc:
+09/13/2021 21:39:49 - INFO - __main__ - eval loss: 0.498025, acc: 0.8006509357200976, 
+09/13/2021 21:39:49 - INFO - __main__ - eval done total : 21.922407627105713 s
+09/13/2021 21:40:04 - INFO - __main__ - global step 6510/36816, epoch: 1, batch: 373, rank_id: 0, loss: 0.546727, lr: 0.0000782028, speed: 0.8067 step/s
+09/13/2021 21:40:18 - INFO - __main__ - global step 6540/36816, epoch: 1, batch: 403, rank_id: 0, loss: 0.410191, lr: 0.0000781648, speed: 2.0788 step/s
+09/13/2021 21:40:33 - INFO - __main__ - global step 6570/36816, epoch: 1, batch: 433, rank_id: 0, loss: 0.545083, lr: 0.0000781264, speed: 2.0191 step/s
+09/13/2021 21:40:48 - INFO - __main__ - global step 6600/36816, epoch: 1, batch: 463, rank_id: 0, loss: 0.476787, lr: 0.0000780876, speed: 2.0700 step/s
+09/13/2021 21:41:03 - INFO - __main__ - global step 6630/36816, epoch: 1, batch: 493, rank_id: 0, loss: 0.680506, lr: 0.0000780485, speed: 2.0170 step/s
+09/13/2021 21:41:17 - INFO - __main__ - global step 6660/36816, epoch: 1, batch: 523, rank_id: 0, loss: 0.381795, lr: 0.0000780089, speed: 2.0628 step/s
+09/13/2021 21:41:32 - INFO - __main__ - global step 6690/36816, epoch: 1, batch: 553, rank_id: 0, loss: 0.607809, lr: 0.0000779690, speed: 2.0276 step/s
+09/13/2021 21:41:46 - INFO - __main__ - global step 6720/36816, epoch: 1, batch: 583, rank_id: 0, loss: 0.610666, lr: 0.0000779286, speed: 2.0878 step/s
+09/13/2021 21:41:46 - INFO - __main__ - ====================================================================================================
+09/13/2021 21:41:46 - INFO - __main__ - m_acc:
+09/13/2021 21:41:58 - INFO - __main__ - eval loss: 0.456162, acc: 0.8033622007131941, 
+09/13/2021 21:41:58 - INFO - __main__ - mm_acc:
+09/13/2021 21:42:09 - INFO - __main__ - eval loss: 0.481221, acc: 0.809092758340114, 
+09/13/2021 21:42:09 - INFO - __main__ - eval done total : 22.773719310760498 s
+09/13/2021 21:42:24 - INFO - __main__ - global step 6750/36816, epoch: 1, batch: 613, rank_id: 0, loss: 0.356092, lr: 0.0000778879, speed: 0.7960 step/s
+09/13/2021 21:42:39 - INFO - __main__ - global step 6780/36816, epoch: 1, batch: 643, rank_id: 0, loss: 0.451131, lr: 0.0000778468, speed: 2.0049 step/s
+09/13/2021 21:42:54 - INFO - __main__ - global step 6810/36816, epoch: 1, batch: 673, rank_id: 0, loss: 0.443803, lr: 0.0000778053, speed: 2.0459 step/s
+09/13/2021 21:43:09 - INFO - __main__ - global step 6840/36816, epoch: 1, batch: 703, rank_id: 0, loss: 0.551398, lr: 0.0000777635, speed: 1.9634 step/s
+09/13/2021 21:43:23 - INFO - __main__ - global step 6870/36816, epoch: 1, batch: 733, rank_id: 0, loss: 0.454070, lr: 0.0000777212, speed: 2.0687 step/s
+09/13/2021 21:43:38 - INFO - __main__ - global step 6900/36816, epoch: 1, batch: 763, rank_id: 0, loss: 0.369426, lr: 0.0000776786, speed: 2.0512 step/s
+09/13/2021 21:43:52 - INFO - __main__ - global step 6930/36816, epoch: 1, batch: 793, rank_id: 0, loss: 0.437748, lr: 0.0000776355, speed: 2.0867 step/s
+09/13/2021 21:44:07 - INFO - __main__ - global step 6960/36816, epoch: 1, batch: 823, rank_id: 0, loss: 0.497168, lr: 0.0000775921, speed: 2.0656 step/s
+09/13/2021 21:44:07 - INFO - __main__ - ====================================================================================================
+09/13/2021 21:44:07 - INFO - __main__ - m_acc:
+09/13/2021 21:44:18 - INFO - __main__ - eval loss: 0.382349, acc: 0.8016301579215487, 
+09/13/2021 21:44:18 - INFO - __main__ - mm_acc:
+09/13/2021 21:44:30 - INFO - __main__ - eval loss: 0.443385, acc: 0.814279902359642, 
+09/13/2021 21:44:30 - INFO - __main__ - eval done total : 23.299837589263916 s
+09/13/2021 21:44:45 - INFO - __main__ - global step 6990/36816, epoch: 1, batch: 853, rank_id: 0, loss: 0.331029, lr: 0.0000775483, speed: 0.7856 step/s
+09/13/2021 21:45:00 - INFO - __main__ - global step 7020/36816, epoch: 1, batch: 883, rank_id: 0, loss: 0.434556, lr: 0.0000775042, speed: 2.0572 step/s
+09/13/2021 21:45:14 - INFO - __main__ - global step 7050/36816, epoch: 1, batch: 913, rank_id: 0, loss: 0.589211, lr: 0.0000774596, speed: 2.0831 step/s
+09/13/2021 21:45:29 - INFO - __main__ - global step 7080/36816, epoch: 1, batch: 943, rank_id: 0, loss: 0.445487, lr: 0.0000774147, speed: 2.0703 step/s
+09/13/2021 21:45:43 - INFO - __main__ - global step 7110/36816, epoch: 1, batch: 973, rank_id: 0, loss: 0.504578, lr: 0.0000773694, speed: 2.0833 step/s
+09/13/2021 21:45:57 - INFO - __main__ - global step 7140/36816, epoch: 1, batch: 1003, rank_id: 0, loss: 0.358824, lr: 0.0000773237, speed: 2.1054 step/s
+09/13/2021 21:46:12 - INFO - __main__ - global step 7170/36816, epoch: 1, batch: 1033, rank_id: 0, loss: 0.460929, lr: 0.0000772776, speed: 2.0810 step/s
+09/13/2021 21:46:26 - INFO - __main__ - global step 7200/36816, epoch: 1, batch: 1063, rank_id: 0, loss: 0.385344, lr: 0.0000772312, speed: 2.0764 step/s
+09/13/2021 21:46:26 - INFO - __main__ - ====================================================================================================
+09/13/2021 21:46:26 - INFO - __main__ - m_acc:
+09/13/2021 21:46:37 - INFO - __main__ - eval loss: 0.397509, acc: 0.8050942435048395, 
+09/13/2021 21:46:37 - INFO - __main__ - mm_acc:
+09/13/2021 21:46:49 - INFO - __main__ - eval loss: 0.447369, acc: 0.8096013018714402, 
+09/13/2021 21:46:49 - INFO - __main__ - eval done total : 22.597437620162964 s
+09/13/2021 21:47:04 - INFO - __main__ - global step 7230/36816, epoch: 1, batch: 1093, rank_id: 0, loss: 0.485890, lr: 0.0000771843, speed: 0.7879 step/s
+09/13/2021 21:47:19 - INFO - __main__ - global step 7260/36816, epoch: 1, batch: 1123, rank_id: 0, loss: 0.547247, lr: 0.0000771371, speed: 1.9858 step/s
+09/13/2021 21:47:35 - INFO - __main__ - global step 7290/36816, epoch: 1, batch: 1153, rank_id: 0, loss: 0.735219, lr: 0.0000770895, speed: 1.9696 step/s
+09/13/2021 21:47:50 - INFO - __main__ - global step 7320/36816, epoch: 1, batch: 1183, rank_id: 0, loss: 0.710240, lr: 0.0000770416, speed: 1.9855 step/s
+09/13/2021 21:48:05 - INFO - __main__ - global step 7350/36816, epoch: 1, batch: 1213, rank_id: 0, loss: 0.450071, lr: 0.0000769932, speed: 1.9569 step/s
+09/13/2021 21:48:20 - INFO - __main__ - global step 7380/36816, epoch: 1, batch: 1243, rank_id: 0, loss: 0.428328, lr: 0.0000769445, speed: 1.9859 step/s
+09/13/2021 21:48:35 - INFO - __main__ - global step 7410/36816, epoch: 1, batch: 1273, rank_id: 0, loss: 0.456152, lr: 0.0000768954, speed: 1.9568 step/s
+09/13/2021 21:48:51 - INFO - __main__ - global step 7440/36816, epoch: 1, batch: 1303, rank_id: 0, loss: 0.483030, lr: 0.0000768460, speed: 1.9665 step/s
+09/13/2021 21:48:51 - INFO - __main__ - ====================================================================================================
+09/13/2021 21:48:51 - INFO - __main__ - m_acc:
+09/13/2021 21:49:02 - INFO - __main__ - eval loss: 0.353269, acc: 0.8109016811003565, 
+09/13/2021 21:49:02 - INFO - __main__ - mm_acc:
+09/13/2021 21:49:13 - INFO - __main__ - eval loss: 0.478241, acc: 0.8110252237591538, 
+09/13/2021 21:49:13 - INFO - __main__ - eval done total : 22.70436120033264 s
+09/13/2021 21:49:29 - INFO - __main__ - global step 7470/36816, epoch: 1, batch: 1333, rank_id: 0, loss: 0.425794, lr: 0.0000767961, speed: 0.7836 step/s
+09/13/2021 21:49:44 - INFO - __main__ - global step 7500/36816, epoch: 1, batch: 1363, rank_id: 0, loss: 0.410725, lr: 0.0000767459, speed: 1.9653 step/s
+09/13/2021 21:49:59 - INFO - __main__ - global step 7530/36816, epoch: 1, batch: 1393, rank_id: 0, loss: 0.316050, lr: 0.0000766953, speed: 1.9738 step/s
+09/13/2021 21:50:14 - INFO - __main__ - global step 7560/36816, epoch: 1, batch: 1423, rank_id: 0, loss: 0.469798, lr: 0.0000766444, speed: 2.0316 step/s
+09/13/2021 21:50:29 - INFO - __main__ - global step 7590/36816, epoch: 1, batch: 1453, rank_id: 0, loss: 0.275921, lr: 0.0000765930, speed: 2.0815 step/s
+09/13/2021 21:50:43 - INFO - __main__ - global step 7620/36816, epoch: 1, batch: 1483, rank_id: 0, loss: 0.639711, lr: 0.0000765413, speed: 2.0671 step/s
+09/13/2021 21:50:58 - INFO - __main__ - global step 7650/36816, epoch: 1, batch: 1513, rank_id: 0, loss: 0.460906, lr: 0.0000764892, speed: 2.0716 step/s
+09/13/2021 21:51:12 - INFO - __main__ - global step 7680/36816, epoch: 1, batch: 1543, rank_id: 0, loss: 0.457192, lr: 0.0000764368, speed: 2.0327 step/s
+09/13/2021 21:51:12 - INFO - __main__ - ====================================================================================================
+09/13/2021 21:51:12 - INFO - __main__ - m_acc:
+09/13/2021 21:51:25 - INFO - __main__ - eval loss: 0.343217, acc: 0.8089658685685176, 
+09/13/2021 21:51:25 - INFO - __main__ - mm_acc:
+09/13/2021 21:51:37 - INFO - __main__ - eval loss: 0.505096, acc: 0.8162123677786819, 
+09/13/2021 21:51:37 - INFO - __main__ - eval done total : 24.61558723449707 s
+09/13/2021 21:51:53 - INFO - __main__ - global step 7710/36816, epoch: 1, batch: 1573, rank_id: 0, loss: 0.320628, lr: 0.0000763840, speed: 0.7299 step/s
+09/13/2021 21:52:08 - INFO - __main__ - global step 7740/36816, epoch: 1, batch: 1603, rank_id: 0, loss: 0.382124, lr: 0.0000763308, speed: 2.0308 step/s
+09/13/2021 21:52:23 - INFO - __main__ - global step 7770/36816, epoch: 1, batch: 1633, rank_id: 0, loss: 0.624695, lr: 0.0000762772, speed: 2.0502 step/s
+09/13/2021 21:52:37 - INFO - __main__ - global step 7800/36816, epoch: 1, batch: 1663, rank_id: 0, loss: 0.453260, lr: 0.0000762233, speed: 2.1059 step/s
+09/13/2021 21:52:52 - INFO - __main__ - global step 7830/36816, epoch: 1, batch: 1693, rank_id: 0, loss: 0.560947, lr: 0.0000761690, speed: 2.0558 step/s
+09/13/2021 21:53:06 - INFO - __main__ - global step 7860/36816, epoch: 1, batch: 1723, rank_id: 0, loss: 0.371162, lr: 0.0000761143, speed: 2.0879 step/s
+09/13/2021 21:53:21 - INFO - __main__ - global step 7890/36816, epoch: 1, batch: 1753, rank_id: 0, loss: 0.513837, lr: 0.0000760593, speed: 2.0150 step/s
+09/13/2021 21:53:36 - INFO - __main__ - global step 7920/36816, epoch: 1, batch: 1783, rank_id: 0, loss: 0.434624, lr: 0.0000760039, speed: 1.9448 step/s
+09/13/2021 21:53:36 - INFO - __main__ - ====================================================================================================
+09/13/2021 21:53:36 - INFO - __main__ - m_acc:
+09/13/2021 21:53:48 - INFO - __main__ - eval loss: 0.378081, acc: 0.8083545593479369, 
+09/13/2021 21:53:48 - INFO - __main__ - mm_acc:
+09/13/2021 21:53:59 - INFO - __main__ - eval loss: 0.523264, acc: 0.8131611065907242, 
+09/13/2021 21:53:59 - INFO - __main__ - eval done total : 22.36389660835266 s
+09/13/2021 21:54:13 - INFO - __main__ - global step 7950/36816, epoch: 1, batch: 1813, rank_id: 0, loss: 0.456669, lr: 0.0000759481, speed: 0.8081 step/s
+09/13/2021 21:54:28 - INFO - __main__ - global step 7980/36816, epoch: 1, batch: 1843, rank_id: 0, loss: 0.391277, lr: 0.0000758920, speed: 2.0803 step/s
+09/13/2021 21:54:43 - INFO - __main__ - global step 8010/36816, epoch: 1, batch: 1873, rank_id: 0, loss: 0.372305, lr: 0.0000758355, speed: 2.0511 step/s
+09/13/2021 21:54:57 - INFO - __main__ - global step 8040/36816, epoch: 1, batch: 1903, rank_id: 0, loss: 0.499145, lr: 0.0000757787, speed: 2.0946 step/s
+09/13/2021 21:55:11 - INFO - __main__ - global step 8070/36816, epoch: 1, batch: 1933, rank_id: 0, loss: 0.450606, lr: 0.0000757214, speed: 2.1009 step/s
+09/13/2021 21:55:26 - INFO - __main__ - global step 8100/36816, epoch: 1, batch: 1963, rank_id: 0, loss: 0.527757, lr: 0.0000756639, speed: 2.0810 step/s
+09/13/2021 21:55:40 - INFO - __main__ - global step 8130/36816, epoch: 1, batch: 1993, rank_id: 0, loss: 0.480655, lr: 0.0000756059, speed: 2.0210 step/s
+09/13/2021 21:55:55 - INFO - __main__ - global step 8160/36816, epoch: 1, batch: 2023, rank_id: 0, loss: 0.449176, lr: 0.0000755476, speed: 2.0901 step/s
+09/13/2021 21:55:55 - INFO - __main__ - ====================================================================================================
+09/13/2021 21:55:55 - INFO - __main__ - m_acc:
+09/13/2021 21:56:06 - INFO - __main__ - eval loss: 0.363654, acc: 0.8059093224656139, 
+09/13/2021 21:56:06 - INFO - __main__ - mm_acc:
+09/13/2021 21:56:17 - INFO - __main__ - eval loss: 0.451585, acc: 0.8129576891781937, 
+09/13/2021 21:56:17 - INFO - __main__ - eval done total : 21.84055733680725 s
+09/13/2021 21:56:32 - INFO - __main__ - global step 8190/36816, epoch: 1, batch: 2053, rank_id: 0, loss: 0.476796, lr: 0.0000754889, speed: 0.8087 step/s
+09/13/2021 21:56:46 - INFO - __main__ - global step 8220/36816, epoch: 1, batch: 2083, rank_id: 0, loss: 0.325382, lr: 0.0000754299, speed: 2.1313 step/s
+09/13/2021 21:57:00 - INFO - __main__ - global step 8250/36816, epoch: 1, batch: 2113, rank_id: 0, loss: 0.512411, lr: 0.0000753705, speed: 2.0856 step/s
+09/13/2021 21:57:15 - INFO - __main__ - global step 8280/36816, epoch: 1, batch: 2143, rank_id: 0, loss: 0.525803, lr: 0.0000753107, speed: 2.0200 step/s
+09/13/2021 21:57:30 - INFO - __main__ - global step 8310/36816, epoch: 1, batch: 2173, rank_id: 0, loss: 0.551153, lr: 0.0000752506, speed: 2.0407 step/s
+09/13/2021 21:57:44 - INFO - __main__ - global step 8340/36816, epoch: 1, batch: 2203, rank_id: 0, loss: 0.286534, lr: 0.0000751902, speed: 2.0870 step/s
+09/13/2021 21:57:59 - INFO - __main__ - global step 8370/36816, epoch: 1, batch: 2233, rank_id: 0, loss: 0.552618, lr: 0.0000751293, speed: 2.0794 step/s
+09/13/2021 21:58:13 - INFO - __main__ - global step 8400/36816, epoch: 1, batch: 2263, rank_id: 0, loss: 0.399744, lr: 0.0000750681, speed: 2.0627 step/s
+09/13/2021 21:58:13 - INFO - __main__ - ====================================================================================================
+09/13/2021 21:58:13 - INFO - __main__ - m_acc:
+09/13/2021 21:58:24 - INFO - __main__ - eval loss: 0.363322, acc: 0.8138563423331635, 
+09/13/2021 21:58:24 - INFO - __main__ - mm_acc:
+09/13/2021 21:58:35 - INFO - __main__ - eval loss: 0.481117, acc: 0.8241456468673718, 
+09/13/2021 21:58:35 - INFO - __main__ - eval done total : 22.22243022918701 s
+09/13/2021 21:58:50 - INFO - __main__ - global step 8430/36816, epoch: 1, batch: 2293, rank_id: 0, loss: 0.441292, lr: 0.0000750066, speed: 0.8114 step/s
+09/13/2021 21:59:04 - INFO - __main__ - global step 8460/36816, epoch: 1, batch: 2323, rank_id: 0, loss: 0.409253, lr: 0.0000749447, speed: 2.1237 step/s
+09/13/2021 21:59:18 - INFO - __main__ - global step 8490/36816, epoch: 1, batch: 2353, rank_id: 0, loss: 0.649286, lr: 0.0000748825, speed: 2.1167 step/s
+09/13/2021 21:59:33 - INFO - __main__ - global step 8520/36816, epoch: 1, batch: 2383, rank_id: 0, loss: 0.366185, lr: 0.0000748198, speed: 2.0715 step/s
+09/13/2021 21:59:47 - INFO - __main__ - global step 8550/36816, epoch: 1, batch: 2413, rank_id: 0, loss: 0.318894, lr: 0.0000747569, speed: 2.1218 step/s
+09/13/2021 22:00:01 - INFO - __main__ - global step 8580/36816, epoch: 1, batch: 2443, rank_id: 0, loss: 0.334505, lr: 0.0000746936, speed: 2.1253 step/s
+09/13/2021 22:00:15 - INFO - __main__ - global step 8610/36816, epoch: 1, batch: 2473, rank_id: 0, loss: 0.519046, lr: 0.0000746299, speed: 2.1175 step/s
+09/13/2021 22:00:30 - INFO - __main__ - global step 8640/36816, epoch: 1, batch: 2503, rank_id: 0, loss: 0.389529, lr: 0.0000745659, speed: 2.0843 step/s
+09/13/2021 22:00:30 - INFO - __main__ - ====================================================================================================
+09/13/2021 22:00:30 - INFO - __main__ - m_acc:
+09/13/2021 22:00:41 - INFO - __main__ - eval loss: 0.423022, acc: 0.8138563423331635, 
+09/13/2021 22:00:41 - INFO - __main__ - mm_acc:
+09/13/2021 22:00:51 - INFO - __main__ - eval loss: 0.500430, acc: 0.817432872253865, 
+09/13/2021 22:00:51 - INFO - __main__ - eval done total : 21.63620400428772 s
+09/13/2021 22:01:06 - INFO - __main__ - global step 8670/36816, epoch: 1, batch: 2533, rank_id: 0, loss: 0.449906, lr: 0.0000745015, speed: 0.8270 step/s
+09/13/2021 22:01:20 - INFO - __main__ - global step 8700/36816, epoch: 1, batch: 2563, rank_id: 0, loss: 0.420455, lr: 0.0000744368, speed: 2.1099 step/s
+09/13/2021 22:01:35 - INFO - __main__ - global step 8730/36816, epoch: 1, batch: 2593, rank_id: 0, loss: 0.478090, lr: 0.0000743717, speed: 2.0768 step/s
+09/13/2021 22:01:49 - INFO - __main__ - global step 8760/36816, epoch: 1, batch: 2623, rank_id: 0, loss: 0.525963, lr: 0.0000743063, speed: 2.0997 step/s
+09/13/2021 22:02:03 - INFO - __main__ - global step 8790/36816, epoch: 1, batch: 2653, rank_id: 0, loss: 0.481305, lr: 0.0000742405, speed: 2.1018 step/s
+09/13/2021 22:02:18 - INFO - __main__ - global step 8820/36816, epoch: 1, batch: 2683, rank_id: 0, loss: 0.291805, lr: 0.0000741744, speed: 2.1006 step/s
+09/13/2021 22:02:32 - INFO - __main__ - global step 8850/36816, epoch: 1, batch: 2713, rank_id: 0, loss: 0.509163, lr: 0.0000741080, speed: 2.1054 step/s
+09/13/2021 22:02:46 - INFO - __main__ - global step 8880/36816, epoch: 1, batch: 2743, rank_id: 0, loss: 0.618938, lr: 0.0000740411, speed: 2.0784 step/s
+09/13/2021 22:02:46 - INFO - __main__ - ====================================================================================================
+09/13/2021 22:02:46 - INFO - __main__ - m_acc:
+09/13/2021 22:02:58 - INFO - __main__ - eval loss: 0.393693, acc: 0.8166072338257768, 
+09/13/2021 22:02:58 - INFO - __main__ - mm_acc:
+09/13/2021 22:03:09 - INFO - __main__ - eval loss: 0.528004, acc: 0.8199755899104963, 
+09/13/2021 22:03:09 - INFO - __main__ - eval done total : 22.570918083190918 s
+09/13/2021 22:03:25 - INFO - __main__ - global step 8910/36816, epoch: 1, batch: 2773, rank_id: 0, loss: 0.464016, lr: 0.0000739740, speed: 0.7724 step/s
+09/13/2021 22:03:40 - INFO - __main__ - global step 8940/36816, epoch: 1, batch: 2803, rank_id: 0, loss: 0.419733, lr: 0.0000739065, speed: 2.0421 step/s
+09/13/2021 22:03:54 - INFO - __main__ - global step 8970/36816, epoch: 1, batch: 2833, rank_id: 0, loss: 0.398245, lr: 0.0000738386, speed: 2.0600 step/s
+09/13/2021 22:04:10 - INFO - __main__ - global step 9000/36816, epoch: 1, batch: 2863, rank_id: 0, loss: 0.514273, lr: 0.0000737704, speed: 1.9429 step/s
+09/13/2021 22:04:25 - INFO - __main__ - global step 9030/36816, epoch: 1, batch: 2893, rank_id: 0, loss: 0.393838, lr: 0.0000737019, speed: 1.9390 step/s
+09/13/2021 22:04:39 - INFO - __main__ - global step 9060/36816, epoch: 1, batch: 2923, rank_id: 0, loss: 0.448262, lr: 0.0000736330, speed: 2.1135 step/s
+09/13/2021 22:04:54 - INFO - __main__ - global step 9090/36816, epoch: 1, batch: 2953, rank_id: 0, loss: 0.492720, lr: 0.0000735638, speed: 2.0813 step/s
+09/13/2021 22:05:08 - INFO - __main__ - global step 9120/36816, epoch: 1, batch: 2983, rank_id: 0, loss: 0.391021, lr: 0.0000734943, speed: 2.0972 step/s
+09/13/2021 22:05:08 - INFO - __main__ - ====================================================================================================
+09/13/2021 22:05:08 - INFO - __main__ - m_acc:
+09/13/2021 22:05:19 - INFO - __main__ - eval loss: 0.420205, acc: 0.8158940397350993, 
+09/13/2021 22:05:19 - INFO - __main__ - mm_acc:
+09/13/2021 22:05:30 - INFO - __main__ - eval loss: 0.448103, acc: 0.8218063466232709, 
+09/13/2021 22:05:30 - INFO - __main__ - eval done total : 21.89055323600769 s
+09/13/2021 22:05:45 - INFO - __main__ - global step 9150/36816, epoch: 1, batch: 3013, rank_id: 0, loss: 0.489961, lr: 0.0000734244, speed: 0.8123 step/s
+09/13/2021 22:05:59 - INFO - __main__ - global step 9180/36816, epoch: 1, batch: 3043, rank_id: 0, loss: 0.375972, lr: 0.0000733541, speed: 2.1171 step/s
+09/13/2021 22:06:14 - INFO - __main__ - global step 9210/36816, epoch: 1, batch: 3073, rank_id: 0, loss: 0.485200, lr: 0.0000732835, speed: 2.0918 step/s
+09/13/2021 22:06:28 - INFO - __main__ - global step 9240/36816, epoch: 1, batch: 3103, rank_id: 0, loss: 0.532934, lr: 0.0000732126, speed: 2.0405 step/s
+09/13/2021 22:06:43 - INFO - __main__ - global step 9270/36816, epoch: 1, batch: 3133, rank_id: 0, loss: 0.415080, lr: 0.0000731414, speed: 2.0978 step/s
+09/13/2021 22:06:57 - INFO - __main__ - global step 9300/36816, epoch: 1, batch: 3163, rank_id: 0, loss: 0.470219, lr: 0.0000730698, speed: 2.1114 step/s
+09/13/2021 22:07:11 - INFO - __main__ - global step 9330/36816, epoch: 1, batch: 3193, rank_id: 0, loss: 0.444411, lr: 0.0000729978, speed: 2.0984 step/s
+09/13/2021 22:07:26 - INFO - __main__ - global step 9360/36816, epoch: 1, batch: 3223, rank_id: 0, loss: 0.473174, lr: 0.0000729256, speed: 2.0580 step/s
+09/13/2021 22:07:26 - INFO - __main__ - ====================================================================================================
+09/13/2021 22:07:26 - INFO - __main__ - m_acc:
+09/13/2021 22:07:36 - INFO - __main__ - eval loss: 0.424680, acc: 0.8155883851248089, 
+09/13/2021 22:07:36 - INFO - __main__ - mm_acc:
+09/13/2021 22:07:47 - INFO - __main__ - eval loss: 0.492818, acc: 0.8179414157851912, 
+09/13/2021 22:07:47 - INFO - __main__ - eval done total : 21.533931732177734 s
+09/13/2021 22:08:03 - INFO - __main__ - global step 9390/36816, epoch: 1, batch: 3253, rank_id: 0, loss: 0.559006, lr: 0.0000728530, speed: 0.8144 step/s
+09/13/2021 22:08:18 - INFO - __main__ - global step 9420/36816, epoch: 1, batch: 3283, rank_id: 0, loss: 0.385485, lr: 0.0000727801, speed: 1.9872 step/s
+09/13/2021 22:08:33 - INFO - __main__ - global step 9450/36816, epoch: 1, batch: 3313, rank_id: 0, loss: 0.231782, lr: 0.0000727068, speed: 1.9642 step/s
+09/13/2021 22:08:48 - INFO - __main__ - global step 9480/36816, epoch: 1, batch: 3343, rank_id: 0, loss: 0.318002, lr: 0.0000726332, speed: 2.0110 step/s
+09/13/2021 22:09:03 - INFO - __main__ - global step 9510/36816, epoch: 1, batch: 3373, rank_id: 0, loss: 0.515781, lr: 0.0000725593, speed: 1.9628 step/s
+09/13/2021 22:09:18 - INFO - __main__ - global step 9540/36816, epoch: 1, batch: 3403, rank_id: 0, loss: 0.309365, lr: 0.0000724850, speed: 2.0078 step/s
+09/13/2021 22:09:33 - INFO - __main__ - global step 9570/36816, epoch: 1, batch: 3433, rank_id: 0, loss: 0.367308, lr: 0.0000724104, speed: 1.9930 step/s
+09/13/2021 22:09:47 - INFO - __main__ - global step 9600/36816, epoch: 1, batch: 3463, rank_id: 0, loss: 0.370954, lr: 0.0000723355, speed: 2.1178 step/s
+09/13/2021 22:09:47 - INFO - __main__ - ====================================================================================================
+09/13/2021 22:09:47 - INFO - __main__ - m_acc:
+09/13/2021 22:09:58 - INFO - __main__ - eval loss: 0.390624, acc: 0.8190524707080998, 
+09/13/2021 22:09:58 - INFO - __main__ - mm_acc:
+09/13/2021 22:10:09 - INFO - __main__ - eval loss: 0.504618, acc: 0.8293327908868999, 
+09/13/2021 22:10:09 - INFO - __main__ - eval done total : 21.581353664398193 s
+09/13/2021 22:10:24 - INFO - __main__ - global step 9630/36816, epoch: 1, batch: 3493, rank_id: 0, loss: 0.368075, lr: 0.0000722603, speed: 0.8183 step/s
+09/13/2021 22:10:39 - INFO - __main__ - global step 9660/36816, epoch: 1, batch: 3523, rank_id: 0, loss: 0.335930, lr: 0.0000721847, speed: 2.0550 step/s
+09/13/2021 22:10:53 - INFO - __main__ - global step 9690/36816, epoch: 1, batch: 3553, rank_id: 0, loss: 0.440573, lr: 0.0000721088, speed: 2.0881 step/s
+09/13/2021 22:11:08 - INFO - __main__ - global step 9720/36816, epoch: 1, batch: 3583, rank_id: 0, loss: 0.353157, lr: 0.0000720326, speed: 2.0333 step/s
+09/13/2021 22:11:22 - INFO - __main__ - global step 9750/36816, epoch: 1, batch: 3613, rank_id: 0, loss: 0.354572, lr: 0.0000719560, speed: 2.0636 step/s
+09/13/2021 22:11:37 - INFO - __main__ - global step 9780/36816, epoch: 1, batch: 3643, rank_id: 0, loss: 0.488059, lr: 0.0000718791, speed: 2.0936 step/s
+09/13/2021 22:11:51 - INFO - __main__ - global step 9810/36816, epoch: 1, batch: 3673, rank_id: 0, loss: 0.490769, lr: 0.0000718019, speed: 2.0775 step/s
+09/13/2021 22:12:06 - INFO - __main__ - global step 9840/36816, epoch: 1, batch: 3703, rank_id: 0, loss: 0.352216, lr: 0.0000717244, speed: 2.0234 step/s
+09/13/2021 22:12:06 - INFO - __main__ - ====================================================================================================
+09/13/2021 22:12:06 - INFO - __main__ - m_acc:
+09/13/2021 22:12:17 - INFO - __main__ - eval loss: 0.391049, acc: 0.8195618950585838, 
+09/13/2021 22:12:17 - INFO - __main__ - mm_acc:
+09/13/2021 22:12:27 - INFO - __main__ - eval loss: 0.497254, acc: 0.8207892595606184, 
+09/13/2021 22:12:27 - INFO - __main__ - eval done total : 21.56005072593689 s
+09/13/2021 22:12:42 - INFO - __main__ - global step 9870/36816, epoch: 1, batch: 3733, rank_id: 0, loss: 0.385224, lr: 0.0000716465, speed: 0.8329 step/s
+09/13/2021 22:12:56 - INFO - __main__ - global step 9900/36816, epoch: 1, batch: 3763, rank_id: 0, loss: 0.478548, lr: 0.0000715684, speed: 2.0859 step/s
+09/13/2021 22:13:10 - INFO - __main__ - global step 9930/36816, epoch: 1, batch: 3793, rank_id: 0, loss: 0.398116, lr: 0.0000714899, speed: 2.1061 step/s
+09/13/2021 22:13:25 - INFO - __main__ - global step 9960/36816, epoch: 1, batch: 3823, rank_id: 0, loss: 0.363385, lr: 0.0000714111, speed: 2.1014 step/s
+09/13/2021 22:13:39 - INFO - __main__ - global step 9990/36816, epoch: 1, batch: 3853, rank_id: 0, loss: 0.467338, lr: 0.0000713320, speed: 2.0620 step/s
+09/13/2021 22:13:54 - INFO - __main__ - global step 10020/36816, epoch: 1, batch: 3883, rank_id: 0, loss: 0.417141, lr: 0.0000712525, speed: 2.1107 step/s
+09/13/2021 22:14:08 - INFO - __main__ - global step 10050/36816, epoch: 1, batch: 3913, rank_id: 0, loss: 0.394933, lr: 0.0000711727, speed: 2.0907 step/s
+09/13/2021 22:14:22 - INFO - __main__ - global step 10080/36816, epoch: 1, batch: 3943, rank_id: 0, loss: 0.442678, lr: 0.0000710927, speed: 2.0819 step/s
+09/13/2021 22:14:22 - INFO - __main__ - ====================================================================================================
+09/13/2021 22:14:22 - INFO - __main__ - m_acc:
+09/13/2021 22:14:33 - INFO - __main__ - eval loss: 0.390866, acc: 0.817524197656648, 
+09/13/2021 22:14:33 - INFO - __main__ - mm_acc:
+09/13/2021 22:14:44 - INFO - __main__ - eval loss: 0.492556, acc: 0.8242473555736372, 
+09/13/2021 22:14:44 - INFO - __main__ - eval done total : 21.92546057701111 s
+09/13/2021 22:14:59 - INFO - __main__ - global step 10110/36816, epoch: 1, batch: 3973, rank_id: 0, loss: 0.421818, lr: 0.0000710123, speed: 0.8152 step/s
+09/13/2021 22:15:13 - INFO - __main__ - global step 10140/36816, epoch: 1, batch: 4003, rank_id: 0, loss: 0.378944, lr: 0.0000709316, speed: 2.1098 step/s
+09/13/2021 22:15:28 - INFO - __main__ - global step 10170/36816, epoch: 1, batch: 4033, rank_id: 0, loss: 0.514341, lr: 0.0000708505, speed: 2.0604 step/s
+09/13/2021 22:15:42 - INFO - __main__ - global step 10200/36816, epoch: 1, batch: 4063, rank_id: 0, loss: 0.396680, lr: 0.0000707692, speed: 2.0970 step/s
+09/13/2021 22:15:56 - INFO - __main__ - global step 10230/36816, epoch: 1, batch: 4093, rank_id: 0, loss: 0.467365, lr: 0.0000706875, speed: 2.1146 step/s
+09/13/2021 22:16:11 - INFO - __main__ - global step 10260/36816, epoch: 1, batch: 4123, rank_id: 0, loss: 0.546581, lr: 0.0000706056, speed: 2.0574 step/s
+09/13/2021 22:16:25 - INFO - __main__ - global step 10290/36816, epoch: 1, batch: 4153, rank_id: 0, loss: 0.528013, lr: 0.0000705233, speed: 2.1046 step/s
+09/13/2021 22:16:40 - INFO - __main__ - global step 10320/36816, epoch: 1, batch: 4183, rank_id: 0, loss: 0.435869, lr: 0.0000704407, speed: 2.0649 step/s
+09/13/2021 22:16:40 - INFO - __main__ - ====================================================================================================
+09/13/2021 22:16:40 - INFO - __main__ - m_acc:
+09/13/2021 22:16:51 - INFO - __main__ - eval loss: 0.372018, acc: 0.8189505858380031, 
+09/13/2021 22:16:51 - INFO - __main__ - mm_acc:
+09/13/2021 22:17:01 - INFO - __main__ - eval loss: 0.492350, acc: 0.822620016273393, 
+09/13/2021 22:17:01 - INFO - __main__ - eval done total : 21.603987216949463 s
+09/13/2021 22:17:16 - INFO - __main__ - global step 10350/36816, epoch: 1, batch: 4213, rank_id: 0, loss: 0.242773, lr: 0.0000703578, speed: 0.8310 step/s
+09/13/2021 22:17:30 - INFO - __main__ - global step 10380/36816, epoch: 1, batch: 4243, rank_id: 0, loss: 0.530787, lr: 0.0000702746, speed: 2.0984 step/s
+09/13/2021 22:17:44 - INFO - __main__ - global step 10410/36816, epoch: 1, batch: 4273, rank_id: 0, loss: 0.470646, lr: 0.0000701911, speed: 2.1101 step/s
+09/13/2021 22:17:59 - INFO - __main__ - global step 10440/36816, epoch: 1, batch: 4303, rank_id: 0, loss: 0.447964, lr: 0.0000701073, speed: 2.0894 step/s
+09/13/2021 22:18:13 - INFO - __main__ - global step 10470/36816, epoch: 1, batch: 4333, rank_id: 0, loss: 0.288153, lr: 0.0000700232, speed: 2.0394 step/s
+09/13/2021 22:18:28 - INFO - __main__ - global step 10500/36816, epoch: 1, batch: 4363, rank_id: 0, loss: 0.428844, lr: 0.0000699388, speed: 2.0905 step/s
+09/13/2021 22:18:42 - INFO - __main__ - global step 10530/36816, epoch: 1, batch: 4393, rank_id: 0, loss: 0.585801, lr: 0.0000698540, speed: 2.1046 step/s
+09/13/2021 22:18:56 - INFO - __main__ - global step 10560/36816, epoch: 1, batch: 4423, rank_id: 0, loss: 0.497874, lr: 0.0000697690, speed: 2.0786 step/s
+09/13/2021 22:18:56 - INFO - __main__ - ====================================================================================================
+09/13/2021 22:18:56 - INFO - __main__ - m_acc:
+09/13/2021 22:19:07 - INFO - __main__ - eval loss: 0.427369, acc: 0.8197656647987773, 
+09/13/2021 22:19:07 - INFO - __main__ - mm_acc:
+09/13/2021 22:19:18 - INFO - __main__ - eval loss: 0.479868, acc: 0.8213995117982099, 
+09/13/2021 22:19:19 - INFO - __main__ - eval done total : 22.04244112968445 s
+09/13/2021 22:19:34 - INFO - __main__ - global step 10590/36816, epoch: 1, batch: 4453, rank_id: 0, loss: 0.358308, lr: 0.0000696837, speed: 0.8042 step/s
+09/13/2021 22:19:49 - INFO - __main__ - global step 10620/36816, epoch: 1, batch: 4483, rank_id: 0, loss: 0.461039, lr: 0.0000695980, speed: 1.9399 step/s
+09/13/2021 22:20:05 - INFO - __main__ - global step 10650/36816, epoch: 1, batch: 4513, rank_id: 0, loss: 0.383812, lr: 0.0000695121, speed: 1.9085 step/s
+09/13/2021 22:20:20 - INFO - __main__ - global step 10680/36816, epoch: 1, batch: 4543, rank_id: 0, loss: 0.530531, lr: 0.0000694259, speed: 2.0099 step/s
+09/13/2021 22:20:35 - INFO - __main__ - global step 10710/36816, epoch: 1, batch: 4573, rank_id: 0, loss: 0.498484, lr: 0.0000693393, speed: 2.0164 step/s
+09/13/2021 22:20:49 - INFO - __main__ - global step 10740/36816, epoch: 1, batch: 4603, rank_id: 0, loss: 0.546622, lr: 0.0000692525, speed: 2.0717 step/s
+09/13/2021 22:21:04 - INFO - __main__ - global step 10770/36816, epoch: 1, batch: 4633, rank_id: 0, loss: 0.494179, lr: 0.0000691654, speed: 2.0560 step/s
+09/13/2021 22:21:19 - INFO - __main__ - global step 10800/36816, epoch: 1, batch: 4663, rank_id: 0, loss: 0.349539, lr: 0.0000690779, speed: 1.9987 step/s
+09/13/2021 22:21:19 - INFO - __main__ - ====================================================================================================
+09/13/2021 22:21:19 - INFO - __main__ - m_acc:
+09/13/2021 22:21:30 - INFO - __main__ - eval loss: 0.379020, acc: 0.8200713194090677, 
+09/13/2021 22:21:30 - INFO - __main__ - mm_acc:
+09/13/2021 22:21:41 - INFO - __main__ - eval loss: 0.488457, acc: 0.8254678600488202, 
+09/13/2021 22:21:41 - INFO - __main__ - eval done total : 22.17430543899536 s
+09/13/2021 22:21:56 - INFO - __main__ - global step 10830/36816, epoch: 1, batch: 4693, rank_id: 0, loss: 0.552974, lr: 0.0000689902, speed: 0.8066 step/s
+09/13/2021 22:22:11 - INFO - __main__ - global step 10860/36816, epoch: 1, batch: 4723, rank_id: 0, loss: 0.510572, lr: 0.0000689022, speed: 2.0168 step/s
+09/13/2021 22:22:25 - INFO - __main__ - global step 10890/36816, epoch: 1, batch: 4753, rank_id: 0, loss: 0.407310, lr: 0.0000688139, speed: 2.0957 step/s
+09/13/2021 22:22:40 - INFO - __main__ - global step 10920/36816, epoch: 1, batch: 4783, rank_id: 0, loss: 0.414608, lr: 0.0000687253, speed: 2.0610 step/s
+09/13/2021 22:22:55 - INFO - __main__ - global step 10950/36816, epoch: 1, batch: 4813, rank_id: 0, loss: 0.456140, lr: 0.0000686364, speed: 1.9772 step/s
+09/13/2021 22:23:11 - INFO - __main__ - global step 10980/36816, epoch: 1, batch: 4843, rank_id: 0, loss: 0.367005, lr: 0.0000685472, speed: 1.8880 step/s
+09/13/2021 22:23:27 - INFO - __main__ - global step 11010/36816, epoch: 1, batch: 4873, rank_id: 0, loss: 0.240137, lr: 0.0000684577, speed: 1.9057 step/s
+09/13/2021 22:23:43 - INFO - __main__ - global step 11040/36816, epoch: 1, batch: 4903, rank_id: 0, loss: 0.466997, lr: 0.0000683680, speed: 1.8537 step/s
+09/13/2021 22:23:43 - INFO - __main__ - ====================================================================================================
+09/13/2021 22:23:43 - INFO - __main__ - m_acc:
+09/13/2021 22:23:55 - INFO - __main__ - eval loss: 0.362975, acc: 0.8214977075904228, 
+09/13/2021 22:23:55 - INFO - __main__ - mm_acc:
+09/13/2021 22:24:07 - INFO - __main__ - eval loss: 0.478375, acc: 0.8239422294548413, 
+09/13/2021 22:24:07 - INFO - __main__ - eval done total : 23.837591648101807 s
+09/13/2021 22:24:21 - INFO - __main__ - global step 11070/36816, epoch: 1, batch: 4933, rank_id: 0, loss: 0.456951, lr: 0.0000682779, speed: 0.7788 step/s
+09/13/2021 22:24:36 - INFO - __main__ - global step 11100/36816, epoch: 1, batch: 4963, rank_id: 0, loss: 0.256690, lr: 0.0000681876, speed: 2.0961 step/s
+09/13/2021 22:24:50 - INFO - __main__ - global step 11130/36816, epoch: 1, batch: 4993, rank_id: 0, loss: 0.333903, lr: 0.0000680970, speed: 2.0156 step/s
+09/13/2021 22:25:05 - INFO - __main__ - global step 11160/36816, epoch: 1, batch: 5023, rank_id: 0, loss: 0.542234, lr: 0.0000680061, speed: 2.0795 step/s
+09/13/2021 22:25:20 - INFO - __main__ - global step 11190/36816, epoch: 1, batch: 5053, rank_id: 0, loss: 0.499772, lr: 0.0000679149, speed: 2.0571 step/s
+09/13/2021 22:25:34 - INFO - __main__ - global step 11220/36816, epoch: 1, batch: 5083, rank_id: 0, loss: 0.469364, lr: 0.0000678234, speed: 2.0401 step/s
+09/13/2021 22:25:49 - INFO - __main__ - global step 11250/36816, epoch: 1, batch: 5113, rank_id: 0, loss: 0.369747, lr: 0.0000677316, speed: 1.9973 step/s
+09/13/2021 22:26:04 - INFO - __main__ - global step 11280/36816, epoch: 1, batch: 5143, rank_id: 0, loss: 0.583470, lr: 0.0000676396, speed: 1.9883 step/s
+09/13/2021 22:26:04 - INFO - __main__ - ====================================================================================================
+09/13/2021 22:26:04 - INFO - __main__ - m_acc:
+09/13/2021 22:26:15 - INFO - __main__ - eval loss: 0.374894, acc: 0.8247580234335201, 
+09/13/2021 22:26:15 - INFO - __main__ - mm_acc:
+09/13/2021 22:26:26 - INFO - __main__ - eval loss: 0.499748, acc: 0.8279088689991864, 
+09/13/2021 22:26:26 - INFO - __main__ - eval done total : 21.867316246032715 s
+09/13/2021 22:26:41 - INFO - __main__ - global step 11310/36816, epoch: 1, batch: 5173, rank_id: 0, loss: 0.381752, lr: 0.0000675473, speed: 0.8109 step/s
+09/13/2021 22:26:56 - INFO - __main__ - global step 11340/36816, epoch: 1, batch: 5203, rank_id: 0, loss: 0.612928, lr: 0.0000674547, speed: 2.1103 step/s
+09/13/2021 22:27:10 - INFO - __main__ - global step 11370/36816, epoch: 1, batch: 5233, rank_id: 0, loss: 0.425631, lr: 0.0000673618, speed: 2.0684 step/s
+09/13/2021 22:27:25 - INFO - __main__ - global step 11400/36816, epoch: 1, batch: 5263, rank_id: 0, loss: 0.425786, lr: 0.0000672687, speed: 2.0123 step/s
+09/13/2021 22:27:39 - INFO - __main__ - global step 11430/36816, epoch: 1, batch: 5293, rank_id: 0, loss: 0.419975, lr: 0.0000671752, speed: 2.0751 step/s
+09/13/2021 22:27:54 - INFO - __main__ - global step 11460/36816, epoch: 1, batch: 5323, rank_id: 0, loss: 0.315531, lr: 0.0000670815, speed: 2.0594 step/s
+09/13/2021 22:28:08 - INFO - __main__ - global step 11490/36816, epoch: 1, batch: 5353, rank_id: 0, loss: 0.355125, lr: 0.0000669875, speed: 2.0822 step/s
+09/13/2021 22:28:23 - INFO - __main__ - global step 11520/36816, epoch: 1, batch: 5383, rank_id: 0, loss: 0.489203, lr: 0.0000668933, speed: 2.0076 step/s
+09/13/2021 22:28:23 - INFO - __main__ - ====================================================================================================
+09/13/2021 22:28:23 - INFO - __main__ - m_acc:
+09/13/2021 22:28:35 - INFO - __main__ - eval loss: 0.399553, acc: 0.8236372898624554, 
+09/13/2021 22:28:35 - INFO - __main__ - mm_acc:
+09/13/2021 22:28:46 - INFO - __main__ - eval loss: 0.461558, acc: 0.8235353946297803, 
+09/13/2021 22:28:46 - INFO - __main__ - eval done total : 22.263760566711426 s
+09/13/2021 22:29:00 - INFO - __main__ - global step 11550/36816, epoch: 1, batch: 5413, rank_id: 0, loss: 0.398825, lr: 0.0000667988, speed: 0.8137 step/s
+09/13/2021 22:29:15 - INFO - __main__ - global step 11580/36816, epoch: 1, batch: 5443, rank_id: 0, loss: 0.312175, lr: 0.0000667040, speed: 2.0793 step/s
+09/13/2021 22:29:29 - INFO - __main__ - global step 11610/36816, epoch: 1, batch: 5473, rank_id: 0, loss: 0.546592, lr: 0.0000666089, speed: 2.0554 step/s
+09/13/2021 22:29:44 - INFO - __main__ - global step 11640/36816, epoch: 1, batch: 5503, rank_id: 0, loss: 0.471558, lr: 0.0000665135, speed: 2.0823 step/s
+09/13/2021 22:29:59 - INFO - __main__ - global step 11670/36816, epoch: 1, batch: 5533, rank_id: 0, loss: 0.364868, lr: 0.0000664179, speed: 2.0095 step/s
+09/13/2021 22:30:14 - INFO - __main__ - global step 11700/36816, epoch: 1, batch: 5563, rank_id: 0, loss: 0.519198, lr: 0.0000663221, speed: 1.9044 step/s
+09/13/2021 22:30:30 - INFO - __main__ - global step 11730/36816, epoch: 1, batch: 5593, rank_id: 0, loss: 0.533892, lr: 0.0000662259, speed: 1.9284 step/s
+09/13/2021 22:30:44 - INFO - __main__ - global step 11760/36816, epoch: 1, batch: 5623, rank_id: 0, loss: 0.301788, lr: 0.0000661295, speed: 2.0761 step/s
+09/13/2021 22:30:44 - INFO - __main__ - ====================================================================================================
+09/13/2021 22:30:44 - INFO - __main__ - m_acc:
+09/13/2021 22:30:55 - INFO - __main__ - eval loss: 0.359165, acc: 0.8227203260315843, 
+09/13/2021 22:30:55 - INFO - __main__ - mm_acc:
+09/13/2021 22:31:06 - INFO - __main__ - eval loss: 0.487623, acc: 0.8221114727420668, 
+09/13/2021 22:31:06 - INFO - __main__ - eval done total : 22.0238037109375 s
+09/13/2021 22:31:21 - INFO - __main__ - global step 11790/36816, epoch: 1, batch: 5653, rank_id: 0, loss: 0.498914, lr: 0.0000660328, speed: 0.8152 step/s
+09/13/2021 22:31:35 - INFO - __main__ - global step 11820/36816, epoch: 1, batch: 5683, rank_id: 0, loss: 0.482419, lr: 0.0000659359, speed: 2.0928 step/s
+09/13/2021 22:31:50 - INFO - __main__ - global step 11850/36816, epoch: 1, batch: 5713, rank_id: 0, loss: 0.495763, lr: 0.0000658387, speed: 2.0576 step/s
+09/13/2021 22:32:04 - INFO - __main__ - global step 11880/36816, epoch: 1, batch: 5743, rank_id: 0, loss: 0.400564, lr: 0.0000657412, speed: 2.0886 step/s
+09/13/2021 22:32:19 - INFO - __main__ - global step 11910/36816, epoch: 1, batch: 5773, rank_id: 0, loss: 0.424804, lr: 0.0000656435, speed: 2.0840 step/s
+09/13/2021 22:32:33 - INFO - __main__ - global step 11940/36816, epoch: 1, batch: 5803, rank_id: 0, loss: 0.418678, lr: 0.0000655455, speed: 2.0598 step/s
+09/13/2021 22:32:48 - INFO - __main__ - global step 11970/36816, epoch: 1, batch: 5833, rank_id: 0, loss: 0.420953, lr: 0.0000654473, speed: 2.0752 step/s
+09/13/2021 22:33:02 - INFO - __main__ - global step 12000/36816, epoch: 1, batch: 5863, rank_id: 0, loss: 0.418895, lr: 0.0000653488, speed: 2.1427 step/s
+09/13/2021 22:33:02 - INFO - __main__ - ====================================================================================================
+09/13/2021 22:33:02 - INFO - __main__ - m_acc:
+09/13/2021 22:33:13 - INFO - __main__ - eval loss: 0.392354, acc: 0.8286296484971981, 
+09/13/2021 22:33:13 - INFO - __main__ - mm_acc:
+09/13/2021 22:33:24 - INFO - __main__ - eval loss: 0.480420, acc: 0.8287225386493083, 
+09/13/2021 22:33:24 - INFO - __main__ - eval done total : 21.86857295036316 s
+09/13/2021 22:33:40 - INFO - __main__ - global step 12030/36816, epoch: 1, batch: 5893, rank_id: 0, loss: 0.565710, lr: 0.0000652500, speed: 0.7887 step/s
+09/13/2021 22:33:56 - INFO - __main__ - global step 12060/36816, epoch: 1, batch: 5923, rank_id: 0, loss: 0.312342, lr: 0.0000651510, speed: 1.8993 step/s
+09/13/2021 22:34:11 - INFO - __main__ - global step 12090/36816, epoch: 1, batch: 5953, rank_id: 0, loss: 0.378850, lr: 0.0000650517, speed: 1.9654 step/s
+09/13/2021 22:34:26 - INFO - __main__ - global step 12120/36816, epoch: 1, batch: 5983, rank_id: 0, loss: 0.398814, lr: 0.0000649522, speed: 1.9275 step/s
+09/13/2021 22:34:41 - INFO - __main__ - global step 12150/36816, epoch: 1, batch: 6013, rank_id: 0, loss: 0.408490, lr: 0.0000648524, speed: 2.0320 step/s
+09/13/2021 22:34:56 - INFO - __main__ - global step 12180/36816, epoch: 1, batch: 6043, rank_id: 0, loss: 0.411322, lr: 0.0000647524, speed: 2.0757 step/s
+09/13/2021 22:35:10 - INFO - __main__ - global step 12210/36816, epoch: 1, batch: 6073, rank_id: 0, loss: 0.564781, lr: 0.0000646521, speed: 2.0877 step/s
+09/13/2021 22:35:25 - INFO - __main__ - global step 12240/36816, epoch: 1, batch: 6103, rank_id: 0, loss: 0.500932, lr: 0.0000645516, speed: 2.0628 step/s
+09/13/2021 22:35:25 - INFO - __main__ - ====================================================================================================
+09/13/2021 22:35:25 - INFO - __main__ - m_acc:
+09/13/2021 22:35:35 - INFO - __main__ - eval loss: 0.309952, acc: 0.8253693326541008, 
+09/13/2021 22:35:35 - INFO - __main__ - mm_acc:
+09/13/2021 22:35:48 - INFO - __main__ - eval loss: 0.496318, acc: 0.8225183075671277, 
+09/13/2021 22:35:48 - INFO - __main__ - eval done total : 23.320657968521118 s
+09/13/2021 22:36:03 - INFO - __main__ - global step 12270/36816, epoch: 1, batch: 6133, rank_id: 0, loss: 0.419436, lr: 0.0000644508, speed: 0.7873 step/s
+09/13/2021 22:36:17 - INFO - __main__ - global step 12300/36816, epoch: 2, batch: 27, rank_id: 0, loss: 0.346919, lr: 0.0000643498, speed: 2.1064 step/s
+09/13/2021 22:36:32 - INFO - __main__ - global step 12330/36816, epoch: 2, batch: 57, rank_id: 0, loss: 0.335395, lr: 0.0000642485, speed: 1.9661 step/s
+09/13/2021 22:36:48 - INFO - __main__ - global step 12360/36816, epoch: 2, batch: 87, rank_id: 0, loss: 0.412363, lr: 0.0000641470, speed: 1.8807 step/s
+09/13/2021 22:37:04 - INFO - __main__ - global step 12390/36816, epoch: 2, batch: 117, rank_id: 0, loss: 0.329213, lr: 0.0000640452, speed: 1.9173 step/s
+09/13/2021 22:37:20 - INFO - __main__ - global step 12420/36816, epoch: 2, batch: 147, rank_id: 0, loss: 0.473735, lr: 0.0000639432, speed: 1.8957 step/s
+09/13/2021 22:37:36 - INFO - __main__ - global step 12450/36816, epoch: 2, batch: 177, rank_id: 0, loss: 0.339281, lr: 0.0000638409, speed: 1.8686 step/s
+09/13/2021 22:37:51 - INFO - __main__ - global step 12480/36816, epoch: 2, batch: 207, rank_id: 0, loss: 0.399435, lr: 0.0000637385, speed: 1.9226 step/s
+09/13/2021 22:37:51 - INFO - __main__ - ====================================================================================================
+09/13/2021 22:37:51 - INFO - __main__ - m_acc:
+09/13/2021 22:38:03 - INFO - __main__ - eval loss: 0.422528, acc: 0.8278145695364238, 
+09/13/2021 22:38:03 - INFO - __main__ - mm_acc:
+09/13/2021 22:38:15 - INFO - __main__ - eval loss: 0.520058, acc: 0.8288242473555736, 
+09/13/2021 22:38:15 - INFO - __main__ - eval done total : 23.458454132080078 s
+09/13/2021 22:38:31 - INFO - __main__ - global step 12510/36816, epoch: 2, batch: 237, rank_id: 0, loss: 0.306404, lr: 0.0000636357, speed: 0.7615 step/s
+09/13/2021 22:38:45 - INFO - __main__ - global step 12540/36816, epoch: 2, batch: 267, rank_id: 0, loss: 0.380958, lr: 0.0000635328, speed: 2.0701 step/s
+09/13/2021 22:39:00 - INFO - __main__ - global step 12570/36816, epoch: 2, batch: 297, rank_id: 0, loss: 0.329945, lr: 0.0000634295, speed: 2.0825 step/s
+09/13/2021 22:39:14 - INFO - __main__ - global step 12600/36816, epoch: 2, batch: 327, rank_id: 0, loss: 0.327396, lr: 0.0000633261, speed: 2.0958 step/s
+09/13/2021 22:39:29 - INFO - __main__ - global step 12630/36816, epoch: 2, batch: 357, rank_id: 0, loss: 0.348227, lr: 0.0000632224, speed: 2.0261 step/s
+09/13/2021 22:39:43 - INFO - __main__ - global step 12660/36816, epoch: 2, batch: 387, rank_id: 0, loss: 0.356869, lr: 0.0000631185, speed: 2.0829 step/s
+09/13/2021 22:39:58 - INFO - __main__ - global step 12690/36816, epoch: 2, batch: 417, rank_id: 0, loss: 0.337534, lr: 0.0000630143, speed: 2.0871 step/s
+09/13/2021 22:40:12 - INFO - __main__ - global step 12720/36816, epoch: 2, batch: 447, rank_id: 0, loss: 0.421948, lr: 0.0000629100, speed: 2.0469 step/s
+09/13/2021 22:40:12 - INFO - __main__ - ====================================================================================================
+09/13/2021 22:40:12 - INFO - __main__ - m_acc:
+09/13/2021 22:40:23 - INFO - __main__ - eval loss: 0.401833, acc: 0.8285277636271013, 
+09/13/2021 22:40:23 - INFO - __main__ - mm_acc:
+09/13/2021 22:40:34 - INFO - __main__ - eval loss: 0.534870, acc: 0.8295362082994304, 
+09/13/2021 22:40:34 - INFO - __main__ - eval done total : 22.21546769142151 s
+09/13/2021 22:40:49 - INFO - __main__ - global step 12750/36816, epoch: 2, batch: 477, rank_id: 0, loss: 0.316672, lr: 0.0000628053, speed: 0.8121 step/s
+09/13/2021 22:41:03 - INFO - __main__ - global step 12780/36816, epoch: 2, batch: 507, rank_id: 0, loss: 0.403716, lr: 0.0000627005, speed: 2.0934 step/s
+09/13/2021 22:41:18 - INFO - __main__ - global step 12810/36816, epoch: 2, batch: 537, rank_id: 0, loss: 0.527309, lr: 0.0000625954, speed: 2.0521 step/s
+09/13/2021 22:41:33 - INFO - __main__ - global step 12840/36816, epoch: 2, batch: 567, rank_id: 0, loss: 0.317617, lr: 0.0000624901, speed: 2.0533 step/s
+09/13/2021 22:41:47 - INFO - __main__ - global step 12870/36816, epoch: 2, batch: 597, rank_id: 0, loss: 0.185982, lr: 0.0000623846, speed: 2.1126 step/s
+09/13/2021 22:42:02 - INFO - __main__ - global step 12900/36816, epoch: 2, batch: 627, rank_id: 0, loss: 0.198895, lr: 0.0000622788, speed: 2.0222 step/s
+09/13/2021 22:42:16 - INFO - __main__ - global step 12930/36816, epoch: 2, batch: 657, rank_id: 0, loss: 0.300578, lr: 0.0000621728, speed: 2.0853 step/s
+09/13/2021 22:42:31 - INFO - __main__ - global step 12960/36816, epoch: 2, batch: 687, rank_id: 0, loss: 0.411243, lr: 0.0000620666, speed: 2.0777 step/s
+09/13/2021 22:42:31 - INFO - __main__ - ====================================================================================================
+09/13/2021 22:42:31 - INFO - __main__ - m_acc:
+09/13/2021 22:42:41 - INFO - __main__ - eval loss: 0.381114, acc: 0.8263881813550688, 
+09/13/2021 22:42:41 - INFO - __main__ - mm_acc:
+09/13/2021 22:42:53 - INFO - __main__ - eval loss: 0.499763, acc: 0.8233319772172498, 
+09/13/2021 22:42:53 - INFO - __main__ - eval done total : 22.3832426071167 s
+09/13/2021 22:43:08 - INFO - __main__ - global step 12990/36816, epoch: 2, batch: 717, rank_id: 0, loss: 0.413075, lr: 0.0000619602, speed: 0.8044 step/s
+09/13/2021 22:43:22 - INFO - __main__ - global step 13020/36816, epoch: 2, batch: 747, rank_id: 0, loss: 0.537824, lr: 0.0000618535, speed: 2.0796 step/s
+09/13/2021 22:43:37 - INFO - __main__ - global step 13050/36816, epoch: 2, batch: 777, rank_id: 0, loss: 0.256866, lr: 0.0000617466, speed: 1.9804 step/s
+09/13/2021 22:43:53 - INFO - __main__ - global step 13080/36816, epoch: 2, batch: 807, rank_id: 0, loss: 0.301296, lr: 0.0000616395, speed: 1.9198 step/s
+09/13/2021 22:44:08 - INFO - __main__ - global step 13110/36816, epoch: 2, batch: 837, rank_id: 0, loss: 0.398504, lr: 0.0000615322, speed: 2.0416 step/s
+09/13/2021 22:44:22 - INFO - __main__ - global step 13140/36816, epoch: 2, batch: 867, rank_id: 0, loss: 0.364590, lr: 0.0000614247, speed: 2.0587 step/s
+09/13/2021 22:44:37 - INFO - __main__ - global step 13170/36816, epoch: 2, batch: 897, rank_id: 0, loss: 0.304321, lr: 0.0000613169, speed: 2.0146 step/s
+09/13/2021 22:44:53 - INFO - __main__ - global step 13200/36816, epoch: 2, batch: 927, rank_id: 0, loss: 0.321940, lr: 0.0000612090, speed: 1.8453 step/s
+09/13/2021 22:44:53 - INFO - __main__ - ====================================================================================================
+09/13/2021 22:44:53 - INFO - __main__ - m_acc:
+09/13/2021 22:45:05 - INFO - __main__ - eval loss: 0.415261, acc: 0.8258787570045848, 
+09/13/2021 22:45:05 - INFO - __main__ - mm_acc:
+09/13/2021 22:45:17 - INFO - __main__ - eval loss: 0.498780, acc: 0.826179820992677, 
+09/13/2021 22:45:17 - INFO - __main__ - eval done total : 23.5730242729187 s
+09/13/2021 22:45:33 - INFO - __main__ - global step 13230/36816, epoch: 2, batch: 957, rank_id: 0, loss: 0.373999, lr: 0.0000611008, speed: 0.7565 step/s
+09/13/2021 22:45:48 - INFO - __main__ - global step 13260/36816, epoch: 2, batch: 987, rank_id: 0, loss: 0.355017, lr: 0.0000609924, speed: 2.0476 step/s
+09/13/2021 22:46:02 - INFO - __main__ - global step 13290/36816, epoch: 2, batch: 1017, rank_id: 0, loss: 0.368050, lr: 0.0000608838, speed: 2.0531 step/s
+09/13/2021 22:46:17 - INFO - __main__ - global step 13320/36816, epoch: 2, batch: 1047, rank_id: 0, loss: 0.304605, lr: 0.0000607750, speed: 2.0757 step/s
+09/13/2021 22:46:32 - INFO - __main__ - global step 13350/36816, epoch: 2, batch: 1077, rank_id: 0, loss: 0.349018, lr: 0.0000606659, speed: 2.0221 step/s
+09/13/2021 22:46:46 - INFO - __main__ - global step 13380/36816, epoch: 2, batch: 1107, rank_id: 0, loss: 0.442526, lr: 0.0000605567, speed: 2.0859 step/s
+09/13/2021 22:47:01 - INFO - __main__ - global step 13410/36816, epoch: 2, batch: 1137, rank_id: 0, loss: 0.252604, lr: 0.0000604472, speed: 2.0707 step/s
+09/13/2021 22:47:15 - INFO - __main__ - global step 13440/36816, epoch: 2, batch: 1167, rank_id: 0, loss: 0.291269, lr: 0.0000603376, speed: 2.0393 step/s
+09/13/2021 22:47:15 - INFO - __main__ - ====================================================================================================
+09/13/2021 22:47:15 - INFO - __main__ - m_acc:
+09/13/2021 22:47:27 - INFO - __main__ - eval loss: 0.355974, acc: 0.8279164544065206, 
+09/13/2021 22:47:27 - INFO - __main__ - mm_acc:
+09/13/2021 22:47:39 - INFO - __main__ - eval loss: 0.478011, acc: 0.8303498779495525, 
+09/13/2021 22:47:39 - INFO - __main__ - eval done total : 23.70451045036316 s
+09/13/2021 22:47:55 - INFO - __main__ - global step 13470/36816, epoch: 2, batch: 1197, rank_id: 0, loss: 0.209739, lr: 0.0000602277, speed: 0.7547 step/s
+09/13/2021 22:48:10 - INFO - __main__ - global step 13500/36816, epoch: 2, batch: 1227, rank_id: 0, loss: 0.270343, lr: 0.0000601177, speed: 1.9836 step/s
+09/13/2021 22:48:25 - INFO - __main__ - global step 13530/36816, epoch: 2, batch: 1257, rank_id: 0, loss: 0.318769, lr: 0.0000600074, speed: 2.0145 step/s
+09/13/2021 22:48:41 - INFO - __main__ - global step 13560/36816, epoch: 2, batch: 1287, rank_id: 0, loss: 0.241273, lr: 0.0000598969, speed: 1.9349 step/s
+09/13/2021 22:48:56 - INFO - __main__ - global step 13590/36816, epoch: 2, batch: 1317, rank_id: 0, loss: 0.553171, lr: 0.0000597862, speed: 1.9147 step/s
+09/13/2021 22:49:12 - INFO - __main__ - global step 13620/36816, epoch: 2, batch: 1347, rank_id: 0, loss: 0.257627, lr: 0.0000596754, speed: 1.9368 step/s
+09/13/2021 22:49:26 - INFO - __main__ - global step 13650/36816, epoch: 2, batch: 1377, rank_id: 0, loss: 0.390215, lr: 0.0000595643, speed: 2.0856 step/s
+09/13/2021 22:49:40 - INFO - __main__ - global step 13680/36816, epoch: 2, batch: 1407, rank_id: 0, loss: 0.413651, lr: 0.0000594530, speed: 2.1027 step/s
+09/13/2021 22:49:40 - INFO - __main__ - ====================================================================================================
+09/13/2021 22:49:40 - INFO - __main__ - m_acc:
+09/13/2021 22:49:52 - INFO - __main__ - eval loss: 0.368671, acc: 0.828731533367295, 
+09/13/2021 22:49:52 - INFO - __main__ - mm_acc:
+09/13/2021 22:50:04 - INFO - __main__ - eval loss: 0.523458, acc: 0.8209926769731489, 
+09/13/2021 22:50:04 - INFO - __main__ - eval done total : 23.911935806274414 s
+09/13/2021 22:50:20 - INFO - __main__ - global step 13710/36816, epoch: 2, batch: 1437, rank_id: 0, loss: 0.298854, lr: 0.0000593416, speed: 0.7483 step/s
+09/13/2021 22:50:36 - INFO - __main__ - global step 13740/36816, epoch: 2, batch: 1467, rank_id: 0, loss: 0.333546, lr: 0.0000592299, speed: 1.9064 step/s
+09/13/2021 22:50:52 - INFO - __main__ - global step 13770/36816, epoch: 2, batch: 1497, rank_id: 0, loss: 0.442977, lr: 0.0000591181, speed: 1.9105 step/s
+09/13/2021 22:51:08 - INFO - __main__ - global step 13800/36816, epoch: 2, batch: 1527, rank_id: 0, loss: 0.356269, lr: 0.0000590060, speed: 1.8692 step/s
+09/13/2021 22:51:23 - INFO - __main__ - global step 13830/36816, epoch: 2, batch: 1557, rank_id: 0, loss: 0.421052, lr: 0.0000588938, speed: 2.0443 step/s
+09/13/2021 22:51:37 - INFO - __main__ - global step 13860/36816, epoch: 2, batch: 1587, rank_id: 0, loss: 0.444840, lr: 0.0000587813, speed: 2.0908 step/s
+09/13/2021 22:51:52 - INFO - __main__ - global step 13890/36816, epoch: 2, batch: 1617, rank_id: 0, loss: 0.309383, lr: 0.0000586687, speed: 1.9677 step/s
+09/13/2021 22:52:08 - INFO - __main__ - global step 13920/36816, epoch: 2, batch: 1647, rank_id: 0, loss: 0.178433, lr: 0.0000585559, speed: 1.9041 step/s
+09/13/2021 22:52:08 - INFO - __main__ - ====================================================================================================
+09/13/2021 22:52:08 - INFO - __main__ - m_acc:
+09/13/2021 22:52:20 - INFO - __main__ - eval loss: 0.395258, acc: 0.8315843097300051, 
+09/13/2021 22:52:20 - INFO - __main__ - mm_acc:
+09/13/2021 22:52:33 - INFO - __main__ - eval loss: 0.524599, acc: 0.8276037428803905, 
+09/13/2021 22:52:33 - INFO - __main__ - eval done total : 24.849019765853882 s
+09/13/2021 22:52:49 - INFO - __main__ - global step 13950/36816, epoch: 2, batch: 1677, rank_id: 0, loss: 0.390964, lr: 0.0000584429, speed: 0.7226 step/s
+09/13/2021 22:53:05 - INFO - __main__ - global step 13980/36816, epoch: 2, batch: 1707, rank_id: 0, loss: 0.358865, lr: 0.0000583297, speed: 1.8971 step/s
+09/13/2021 22:53:20 - INFO - __main__ - global step 14010/36816, epoch: 2, batch: 1737, rank_id: 0, loss: 0.269218, lr: 0.0000582164, speed: 2.0840 step/s
+09/13/2021 22:53:34 - INFO - __main__ - global step 14040/36816, epoch: 2, batch: 1767, rank_id: 0, loss: 0.367404, lr: 0.0000581028, speed: 2.0551 step/s
+09/13/2021 22:53:49 - INFO - __main__ - global step 14070/36816, epoch: 2, batch: 1797, rank_id: 0, loss: 0.451077, lr: 0.0000579891, speed: 2.0515 step/s
+09/13/2021 22:54:04 - INFO - __main__ - global step 14100/36816, epoch: 2, batch: 1827, rank_id: 0, loss: 0.347375, lr: 0.0000578752, speed: 2.0042 step/s
+09/13/2021 22:54:18 - INFO - __main__ - global step 14130/36816, epoch: 2, batch: 1857, rank_id: 0, loss: 0.481437, lr: 0.0000577611, speed: 2.0609 step/s
+09/13/2021 22:54:33 - INFO - __main__ - global step 14160/36816, epoch: 2, batch: 1887, rank_id: 0, loss: 0.353981, lr: 0.0000576468, speed: 2.0639 step/s
+09/13/2021 22:54:33 - INFO - __main__ - ====================================================================================================
+09/13/2021 22:54:33 - INFO - __main__ - m_acc:
+09/13/2021 22:54:44 - INFO - __main__ - eval loss: 0.353809, acc: 0.8297503820682629, 
+09/13/2021 22:54:44 - INFO - __main__ - mm_acc:
+09/13/2021 22:54:55 - INFO - __main__ - eval loss: 0.486616, acc: 0.8313669650122051, 
+09/13/2021 22:54:55 - INFO - __main__ - eval done total : 22.35926914215088 s
+09/13/2021 22:55:10 - INFO - __main__ - global step 14190/36816, epoch: 2, batch: 1917, rank_id: 0, loss: 0.340503, lr: 0.0000575323, speed: 0.8086 step/s
+09/13/2021 22:55:25 - INFO - __main__ - global step 14220/36816, epoch: 2, batch: 1947, rank_id: 0, loss: 0.340353, lr: 0.0000574177, speed: 2.0666 step/s
+09/13/2021 22:55:39 - INFO - __main__ - global step 14250/36816, epoch: 2, batch: 1977, rank_id: 0, loss: 0.321882, lr: 0.0000573029, speed: 2.0202 step/s
+09/13/2021 22:55:54 - INFO - __main__ - global step 14280/36816, epoch: 2, batch: 2007, rank_id: 0, loss: 0.743708, lr: 0.0000571879, speed: 2.0699 step/s
+09/13/2021 22:56:09 - INFO - __main__ - global step 14310/36816, epoch: 2, batch: 2037, rank_id: 0, loss: 0.546155, lr: 0.0000570728, speed: 2.0573 step/s
+09/13/2021 22:56:23 - INFO - __main__ - global step 14340/36816, epoch: 2, batch: 2067, rank_id: 0, loss: 0.402951, lr: 0.0000569574, speed: 2.0162 step/s
+09/13/2021 22:56:38 - INFO - __main__ - global step 14370/36816, epoch: 2, batch: 2097, rank_id: 0, loss: 0.225979, lr: 0.0000568419, speed: 2.0762 step/s
+09/13/2021 22:56:52 - INFO - __main__ - global step 14400/36816, epoch: 2, batch: 2127, rank_id: 0, loss: 0.284158, lr: 0.0000567263, speed: 2.0951 step/s
+09/13/2021 22:56:52 - INFO - __main__ - ====================================================================================================
+09/13/2021 22:56:52 - INFO - __main__ - m_acc:
+09/13/2021 22:57:03 - INFO - __main__ - eval loss: 0.324618, acc: 0.8319918492103923, 
+09/13/2021 22:57:03 - INFO - __main__ - mm_acc:
+09/13/2021 22:57:14 - INFO - __main__ - eval loss: 0.449501, acc: 0.8299430431244914, 
+09/13/2021 22:57:14 - INFO - __main__ - eval done total : 22.242990732192993 s
+09/13/2021 22:57:30 - INFO - __main__ - global step 14430/36816, epoch: 2, batch: 2157, rank_id: 0, loss: 0.312855, lr: 0.0000566104, speed: 0.7928 step/s
+09/13/2021 22:57:45 - INFO - __main__ - global step 14460/36816, epoch: 2, batch: 2187, rank_id: 0, loss: 0.365214, lr: 0.0000564944, speed: 2.0397 step/s
+09/13/2021 22:57:59 - INFO - __main__ - global step 14490/36816, epoch: 2, batch: 2217, rank_id: 0, loss: 0.346408, lr: 0.0000563783, speed: 2.0638 step/s
+09/13/2021 22:58:14 - INFO - __main__ - global step 14520/36816, epoch: 2, batch: 2247, rank_id: 0, loss: 0.305202, lr: 0.0000562619, speed: 2.0051 step/s
+09/13/2021 22:58:30 - INFO - __main__ - global step 14550/36816, epoch: 2, batch: 2277, rank_id: 0, loss: 0.355533, lr: 0.0000561454, speed: 1.9186 step/s
+09/13/2021 22:58:46 - INFO - __main__ - global step 14580/36816, epoch: 2, batch: 2307, rank_id: 0, loss: 0.281427, lr: 0.0000560288, speed: 1.8811 step/s
+09/13/2021 22:59:01 - INFO - __main__ - global step 14610/36816, epoch: 2, batch: 2337, rank_id: 0, loss: 0.306150, lr: 0.0000559119, speed: 2.0170 step/s
+09/13/2021 22:59:16 - INFO - __main__ - global step 14640/36816, epoch: 2, batch: 2367, rank_id: 0, loss: 0.345945, lr: 0.0000557950, speed: 1.9839 step/s
+09/13/2021 22:59:16 - INFO - __main__ - ====================================================================================================
+09/13/2021 22:59:16 - INFO - __main__ - m_acc:
+09/13/2021 22:59:27 - INFO - __main__ - eval loss: 0.368492, acc: 0.8332144676515537, 
+09/13/2021 22:59:27 - INFO - __main__ - mm_acc:
+09/13/2021 22:59:38 - INFO - __main__ - eval loss: 0.475538, acc: 0.8317737998372661, 
+09/13/2021 22:59:38 - INFO - __main__ - eval done total : 22.156612873077393 s
+09/13/2021 22:59:53 - INFO - __main__ - global step 14670/36816, epoch: 2, batch: 2397, rank_id: 0, loss: 0.330533, lr: 0.0000556778, speed: 0.8042 step/s
+09/13/2021 23:00:08 - INFO - __main__ - global step 14700/36816, epoch: 2, batch: 2427, rank_id: 0, loss: 0.538454, lr: 0.0000555605, speed: 2.0257 step/s
+09/13/2021 23:00:23 - INFO - __main__ - global step 14730/36816, epoch: 2, batch: 2457, rank_id: 0, loss: 0.322157, lr: 0.0000554431, speed: 2.0333 step/s
+09/13/2021 23:00:37 - INFO - __main__ - global step 14760/36816, epoch: 2, batch: 2487, rank_id: 0, loss: 0.477908, lr: 0.0000553254, speed: 2.0931 step/s
+09/13/2021 23:00:52 - INFO - __main__ - global step 14790/36816, epoch: 2, batch: 2517, rank_id: 0, loss: 0.231400, lr: 0.0000552077, speed: 2.0213 step/s
+09/13/2021 23:01:07 - INFO - __main__ - global step 14820/36816, epoch: 2, batch: 2547, rank_id: 0, loss: 0.254628, lr: 0.0000550898, speed: 2.0302 step/s
+09/13/2021 23:01:26 - INFO - __main__ - global step 14850/36816, epoch: 2, batch: 2577, rank_id: 0, loss: 0.313869, lr: 0.0000549717, speed: 1.5179 step/s
+09/13/2021 23:01:47 - INFO - __main__ - global step 14880/36816, epoch: 2, batch: 2607, rank_id: 0, loss: 0.366699, lr: 0.0000548535, speed: 1.4706 step/s
+09/13/2021 23:01:47 - INFO - __main__ - ====================================================================================================
+09/13/2021 23:01:47 - INFO - __main__ - m_acc:
+09/13/2021 23:02:09 - INFO - __main__ - eval loss: 0.363045, acc: 0.8311767702496179, 
+09/13/2021 23:02:09 - INFO - __main__ - mm_acc:
+09/13/2021 23:02:32 - INFO - __main__ - eval loss: 0.456448, acc: 0.8308584214808787, 
+09/13/2021 23:02:32 - INFO - __main__ - eval done total : 44.94653344154358 s
+09/13/2021 23:02:53 - INFO - __main__ - global step 14910/36816, epoch: 2, batch: 2637, rank_id: 0, loss: 0.209844, lr: 0.0000547351, speed: 0.4507 step/s
+09/13/2021 23:03:13 - INFO - __main__ - global step 14940/36816, epoch: 2, batch: 2667, rank_id: 0, loss: 0.314011, lr: 0.0000546166, speed: 1.5516 step/s
+09/13/2021 23:03:33 - INFO - __main__ - global step 14970/36816, epoch: 2, batch: 2697, rank_id: 0, loss: 0.240908, lr: 0.0000544979, speed: 1.4572 step/s
+09/13/2021 23:03:53 - INFO - __main__ - global step 15000/36816, epoch: 2, batch: 2727, rank_id: 0, loss: 0.405347, lr: 0.0000543791, speed: 1.5023 step/s
+09/13/2021 23:04:15 - INFO - __main__ - global step 15030/36816, epoch: 2, batch: 2757, rank_id: 0, loss: 0.377255, lr: 0.0000542601, speed: 1.4077 step/s
+09/13/2021 23:04:35 - INFO - __main__ - global step 15060/36816, epoch: 2, batch: 2787, rank_id: 0, loss: 0.362774, lr: 0.0000541410, speed: 1.4729 step/s
+09/13/2021 23:04:55 - INFO - __main__ - global step 15090/36816, epoch: 2, batch: 2817, rank_id: 0, loss: 0.241355, lr: 0.0000540218, speed: 1.4810 step/s
+09/13/2021 23:05:16 - INFO - __main__ - global step 15120/36816, epoch: 2, batch: 2847, rank_id: 0, loss: 0.484270, lr: 0.0000539024, speed: 1.4552 step/s
+09/13/2021 23:05:16 - INFO - __main__ - ====================================================================================================
+09/13/2021 23:05:16 - INFO - __main__ - m_acc:
+09/13/2021 23:05:38 - INFO - __main__ - eval loss: 0.343879, acc: 0.8314824248599083, 
+09/13/2021 23:05:38 - INFO - __main__ - mm_acc:
+09/13/2021 23:06:01 - INFO - __main__ - eval loss: 0.481779, acc: 0.8319772172497966, 
+09/13/2021 23:06:01 - INFO - __main__ - eval done total : 44.68273329734802 s
+09/13/2021 23:06:20 - INFO - __main__ - global step 15150/36816, epoch: 2, batch: 2877, rank_id: 0, loss: 0.425634, lr: 0.0000537829, speed: 0.4680 step/s
+09/13/2021 23:06:40 - INFO - __main__ - global step 15180/36816, epoch: 2, batch: 2907, rank_id: 0, loss: 0.379258, lr: 0.0000536632, speed: 1.5328 step/s
+09/13/2021 23:07:00 - INFO - __main__ - global step 15210/36816, epoch: 2, batch: 2937, rank_id: 0, loss: 0.411847, lr: 0.0000535434, speed: 1.4556 step/s
+09/13/2021 23:07:20 - INFO - __main__ - global step 15240/36816, epoch: 2, batch: 2967, rank_id: 0, loss: 0.327279, lr: 0.0000534235, speed: 1.5115 step/s
+09/13/2021 23:07:40 - INFO - __main__ - global step 15270/36816, epoch: 2, batch: 2997, rank_id: 0, loss: 0.448243, lr: 0.0000533034, speed: 1.5188 step/s
+09/13/2021 23:08:00 - INFO - __main__ - global step 15300/36816, epoch: 2, batch: 3027, rank_id: 0, loss: 0.253744, lr: 0.0000531832, speed: 1.4838 step/s
+09/13/2021 23:08:20 - INFO - __main__ - global step 15330/36816, epoch: 2, batch: 3057, rank_id: 0, loss: 0.301401, lr: 0.0000530628, speed: 1.4761 step/s
+09/13/2021 23:08:40 - INFO - __main__ - global step 15360/36816, epoch: 2, batch: 3087, rank_id: 0, loss: 0.192720, lr: 0.0000529424, speed: 1.5021 step/s
+09/13/2021 23:08:40 - INFO - __main__ - ====================================================================================================
+09/13/2021 23:08:40 - INFO - __main__ - m_acc:
+09/13/2021 23:09:03 - INFO - __main__ - eval loss: 0.384331, acc: 0.8341314314824249, 
+09/13/2021 23:09:03 - INFO - __main__ - mm_acc:
+09/13/2021 23:09:25 - INFO - __main__ - eval loss: 0.513604, acc: 0.8315703824247356, 
+09/13/2021 23:09:25 - INFO - __main__ - eval done total : 44.798216581344604 s
+09/13/2021 23:09:47 - INFO - __main__ - global step 15390/36816, epoch: 2, batch: 3117, rank_id: 0, loss: 0.267722, lr: 0.0000528218, speed: 0.4498 step/s
+09/13/2021 23:10:08 - INFO - __main__ - global step 15420/36816, epoch: 2, batch: 3147, rank_id: 0, loss: 0.488046, lr: 0.0000527010, speed: 1.3990 step/s
+09/13/2021 23:10:29 - INFO - __main__ - global step 15450/36816, epoch: 2, batch: 3177, rank_id: 0, loss: 0.299981, lr: 0.0000525802, speed: 1.4461 step/s
+09/13/2021 23:10:49 - INFO - __main__ - global step 15480/36816, epoch: 2, batch: 3207, rank_id: 0, loss: 0.283433, lr: 0.0000524592, speed: 1.4774 step/s
+09/13/2021 23:11:10 - INFO - __main__ - global step 15510/36816, epoch: 2, batch: 3237, rank_id: 0, loss: 0.296992, lr: 0.0000523381, speed: 1.4620 step/s
+09/13/2021 23:11:30 - INFO - __main__ - global step 15540/36816, epoch: 2, batch: 3267, rank_id: 0, loss: 0.359061, lr: 0.0000522169, speed: 1.5050 step/s
+09/13/2021 23:11:49 - INFO - __main__ - global step 15570/36816, epoch: 2, batch: 3297, rank_id: 0, loss: 0.411005, lr: 0.0000520955, speed: 1.5529 step/s
+09/13/2021 23:12:09 - INFO - __main__ - global step 15600/36816, epoch: 2, batch: 3327, rank_id: 0, loss: 0.357122, lr: 0.0000519740, speed: 1.4862 step/s
+09/13/2021 23:12:09 - INFO - __main__ - ====================================================================================================
+09/13/2021 23:12:09 - INFO - __main__ - m_acc:
+09/13/2021 23:12:32 - INFO - __main__ - eval loss: 0.303273, acc: 0.8308711156393276, 
+09/13/2021 23:12:32 - INFO - __main__ - mm_acc:
+09/13/2021 23:12:54 - INFO - __main__ - eval loss: 0.517593, acc: 0.8320789259560618, 
+09/13/2021 23:12:54 - INFO - __main__ - eval done total : 45.02764940261841 s
+09/13/2021 23:13:14 - INFO - __main__ - global step 15630/36816, epoch: 2, batch: 3357, rank_id: 0, loss: 0.361640, lr: 0.0000518524, speed: 0.4619 step/s
+09/13/2021 23:13:34 - INFO - __main__ - global step 15660/36816, epoch: 2, batch: 3387, rank_id: 0, loss: 0.413455, lr: 0.0000517307, speed: 1.5146 step/s
+09/13/2021 23:13:55 - INFO - __main__ - global step 15690/36816, epoch: 2, batch: 3417, rank_id: 0, loss: 0.292981, lr: 0.0000516089, speed: 1.4525 step/s
+09/13/2021 23:14:15 - INFO - __main__ - global step 15720/36816, epoch: 2, batch: 3447, rank_id: 0, loss: 0.239189, lr: 0.0000514870, speed: 1.4544 step/s
+09/13/2021 23:14:35 - INFO - __main__ - global step 15750/36816, epoch: 2, batch: 3477, rank_id: 0, loss: 0.504911, lr: 0.0000513649, speed: 1.5226 step/s
+09/13/2021 23:14:55 - INFO - __main__ - global step 15780/36816, epoch: 2, batch: 3507, rank_id: 0, loss: 0.382308, lr: 0.0000512427, speed: 1.4931 step/s
+09/13/2021 23:15:15 - INFO - __main__ - global step 15810/36816, epoch: 2, batch: 3537, rank_id: 0, loss: 0.226942, lr: 0.0000511204, speed: 1.5062 step/s
+09/13/2021 23:15:36 - INFO - __main__ - global step 15840/36816, epoch: 2, batch: 3567, rank_id: 0, loss: 0.296557, lr: 0.0000509980, speed: 1.4172 step/s
+09/13/2021 23:15:36 - INFO - __main__ - ====================================================================================================
+09/13/2021 23:15:36 - INFO - __main__ - m_acc:
+09/13/2021 23:15:59 - INFO - __main__ - eval loss: 0.338198, acc: 0.832603158430973, 
+09/13/2021 23:15:59 - INFO - __main__ - mm_acc:
+09/13/2021 23:16:21 - INFO - __main__ - eval loss: 0.504630, acc: 0.8303498779495525, 
+09/13/2021 23:16:21 - INFO - __main__ - eval done total : 44.96371555328369 s
+09/13/2021 23:16:41 - INFO - __main__ - global step 15870/36816, epoch: 2, batch: 3597, rank_id: 0, loss: 0.378534, lr: 0.0000508755, speed: 0.4615 step/s
+09/13/2021 23:17:01 - INFO - __main__ - global step 15900/36816, epoch: 2, batch: 3627, rank_id: 0, loss: 0.311538, lr: 0.0000507529, speed: 1.4937 step/s
+09/13/2021 23:17:23 - INFO - __main__ - global step 15930/36816, epoch: 2, batch: 3657, rank_id: 0, loss: 0.273999, lr: 0.0000506302, speed: 1.3858 step/s
+09/13/2021 23:17:43 - INFO - __main__ - global step 15960/36816, epoch: 2, batch: 3687, rank_id: 0, loss: 0.395995, lr: 0.0000505073, speed: 1.4727 step/s
+09/13/2021 23:18:03 - INFO - __main__ - global step 15990/36816, epoch: 2, batch: 3717, rank_id: 0, loss: 0.408102, lr: 0.0000503844, speed: 1.5046 step/s
+09/13/2021 23:18:23 - INFO - __main__ - global step 16020/36816, epoch: 2, batch: 3747, rank_id: 0, loss: 0.313012, lr: 0.0000502614, speed: 1.5062 step/s
+09/13/2021 23:18:42 - INFO - __main__ - global step 16050/36816, epoch: 2, batch: 3777, rank_id: 0, loss: 0.259353, lr: 0.0000501382, speed: 1.5781 step/s
+09/13/2021 23:19:03 - INFO - __main__ - global step 16080/36816, epoch: 2, batch: 3807, rank_id: 0, loss: 0.333773, lr: 0.0000500150, speed: 1.4402 step/s
+09/13/2021 23:19:03 - INFO - __main__ - ====================================================================================================
+09/13/2021 23:19:03 - INFO - __main__ - m_acc:
+09/13/2021 23:19:25 - INFO - __main__ - eval loss: 0.327573, acc: 0.8337238920020377, 
+09/13/2021 23:19:26 - INFO - __main__ - mm_acc:
+09/13/2021 23:19:48 - INFO - __main__ - eval loss: 0.451856, acc: 0.8331977217249796, 
+09/13/2021 23:19:48 - INFO - __main__ - eval done total : 44.81194186210632 s
+09/13/2021 23:20:09 - INFO - __main__ - global step 16110/36816, epoch: 2, batch: 3837, rank_id: 0, loss: 0.374466, lr: 0.0000498916, speed: 0.4590 step/s
+09/13/2021 23:20:29 - INFO - __main__ - global step 16140/36816, epoch: 2, batch: 3867, rank_id: 0, loss: 0.322540, lr: 0.0000497682, speed: 1.4457 step/s
+09/13/2021 23:20:49 - INFO - __main__ - global step 16170/36816, epoch: 2, batch: 3897, rank_id: 0, loss: 0.466632, lr: 0.0000496446, speed: 1.5212 step/s
+09/13/2021 23:21:09 - INFO - __main__ - global step 16200/36816, epoch: 2, batch: 3927, rank_id: 0, loss: 0.374499, lr: 0.0000495210, speed: 1.5165 step/s
+09/13/2021 23:21:28 - INFO - __main__ - global step 16230/36816, epoch: 2, batch: 3957, rank_id: 0, loss: 0.467295, lr: 0.0000493973, speed: 1.5256 step/s
+09/13/2021 23:21:48 - INFO - __main__ - global step 16260/36816, epoch: 2, batch: 3987, rank_id: 0, loss: 0.293208, lr: 0.0000492734, speed: 1.5105 step/s
+09/13/2021 23:22:08 - INFO - __main__ - global step 16290/36816, epoch: 2, batch: 4017, rank_id: 0, loss: 0.315085, lr: 0.0000491495, speed: 1.5007 step/s
+09/13/2021 23:22:28 - INFO - __main__ - global step 16320/36816, epoch: 2, batch: 4047, rank_id: 0, loss: 0.391018, lr: 0.0000490255, speed: 1.4991 step/s
+09/13/2021 23:22:28 - INFO - __main__ - ====================================================================================================
+09/13/2021 23:22:28 - INFO - __main__ - m_acc:
+09/13/2021 23:22:51 - INFO - __main__ - eval loss: 0.399288, acc: 0.8283239938869078, 
+09/13/2021 23:22:51 - INFO - __main__ - mm_acc:
+09/13/2021 23:23:13 - INFO - __main__ - eval loss: 0.543231, acc: 0.8247558991049634, 
+09/13/2021 23:23:13 - INFO - __main__ - eval done total : 44.771310806274414 s
+09/13/2021 23:23:34 - INFO - __main__ - global step 16350/36816, epoch: 2, batch: 4077, rank_id: 0, loss: 0.310981, lr: 0.0000489014, speed: 0.4548 step/s
+09/13/2021 23:23:54 - INFO - __main__ - global step 16380/36816, epoch: 2, batch: 4107, rank_id: 0, loss: 0.358934, lr: 0.0000487772, speed: 1.5181 step/s
+09/13/2021 23:24:14 - INFO - __main__ - global step 16410/36816, epoch: 2, batch: 4137, rank_id: 0, loss: 0.462863, lr: 0.0000486530, speed: 1.5076 step/s
+09/13/2021 23:24:34 - INFO - __main__ - global step 16440/36816, epoch: 2, batch: 4167, rank_id: 0, loss: 0.347075, lr: 0.0000485286, speed: 1.5034 step/s
+09/13/2021 23:24:54 - INFO - __main__ - global step 16470/36816, epoch: 2, batch: 4197, rank_id: 0, loss: 0.515571, lr: 0.0000484041, speed: 1.5010 step/s
+09/13/2021 23:25:14 - INFO - __main__ - global step 16500/36816, epoch: 2, batch: 4227, rank_id: 0, loss: 0.502706, lr: 0.0000482796, speed: 1.4675 step/s
+09/13/2021 23:25:34 - INFO - __main__ - global step 16530/36816, epoch: 2, batch: 4257, rank_id: 0, loss: 0.305848, lr: 0.0000481550, speed: 1.5309 step/s
+09/13/2021 23:25:55 - INFO - __main__ - global step 16560/36816, epoch: 2, batch: 4287, rank_id: 0, loss: 0.327336, lr: 0.0000480303, speed: 1.4210 step/s
+09/13/2021 23:25:55 - INFO - __main__ - ====================================================================================================
+09/13/2021 23:25:55 - INFO - __main__ - m_acc:
+09/13/2021 23:26:18 - INFO - __main__ - eval loss: 0.356863, acc: 0.8325012735608762, 
+09/13/2021 23:26:18 - INFO - __main__ - mm_acc:
+09/13/2021 23:26:40 - INFO - __main__ - eval loss: 0.484038, acc: 0.8287225386493083, 
+09/13/2021 23:26:40 - INFO - __main__ - eval done total : 45.42253875732422 s
+09/13/2021 23:27:03 - INFO - __main__ - global step 16590/36816, epoch: 2, batch: 4317, rank_id: 0, loss: 0.289554, lr: 0.0000479055, speed: 0.4424 step/s
+09/13/2021 23:27:22 - INFO - __main__ - global step 16620/36816, epoch: 2, batch: 4347, rank_id: 0, loss: 0.312533, lr: 0.0000477807, speed: 1.5423 step/s
+09/13/2021 23:27:43 - INFO - __main__ - global step 16650/36816, epoch: 2, batch: 4377, rank_id: 0, loss: 0.345905, lr: 0.0000476558, speed: 1.4840 step/s
+09/13/2021 23:28:03 - INFO - __main__ - global step 16680/36816, epoch: 2, batch: 4407, rank_id: 0, loss: 0.261538, lr: 0.0000475308, speed: 1.4870 step/s
+09/13/2021 23:28:23 - INFO - __main__ - global step 16710/36816, epoch: 2, batch: 4437, rank_id: 0, loss: 0.450456, lr: 0.0000474057, speed: 1.5077 step/s
+09/13/2021 23:28:42 - INFO - __main__ - global step 16740/36816, epoch: 2, batch: 4467, rank_id: 0, loss: 0.436744, lr: 0.0000472805, speed: 1.5380 step/s
+09/13/2021 23:29:02 - INFO - __main__ - global step 16770/36816, epoch: 2, batch: 4497, rank_id: 0, loss: 0.383165, lr: 0.0000471553, speed: 1.5160 step/s
+09/13/2021 23:29:22 - INFO - __main__ - global step 16800/36816, epoch: 2, batch: 4527, rank_id: 0, loss: 0.192369, lr: 0.0000470300, speed: 1.4735 step/s
+09/13/2021 23:29:22 - INFO - __main__ - ====================================================================================================
+09/13/2021 23:29:22 - INFO - __main__ - m_acc:
+09/13/2021 23:29:45 - INFO - __main__ - eval loss: 0.388046, acc: 0.8303616912888436, 
+09/13/2021 23:29:45 - INFO - __main__ - mm_acc:
+09/13/2021 23:30:08 - INFO - __main__ - eval loss: 0.455430, acc: 0.8373677786818552, 
+09/13/2021 23:30:08 - INFO - __main__ - eval done total : 45.27529501914978 s
+09/13/2021 23:30:28 - INFO - __main__ - global step 16830/36816, epoch: 2, batch: 4557, rank_id: 0, loss: 0.302051, lr: 0.0000469046, speed: 0.4539 step/s
+09/13/2021 23:30:49 - INFO - __main__ - global step 16860/36816, epoch: 2, batch: 4587, rank_id: 0, loss: 0.452671, lr: 0.0000467792, speed: 1.4826 step/s
+09/13/2021 23:31:09 - INFO - __main__ - global step 16890/36816, epoch: 2, batch: 4617, rank_id: 0, loss: 0.395211, lr: 0.0000466537, speed: 1.4670 step/s
+09/13/2021 23:31:29 - INFO - __main__ - global step 16920/36816, epoch: 2, batch: 4647, rank_id: 0, loss: 0.333685, lr: 0.0000465281, speed: 1.4905 step/s
+09/13/2021 23:31:49 - INFO - __main__ - global step 16950/36816, epoch: 2, batch: 4677, rank_id: 0, loss: 0.303280, lr: 0.0000464025, speed: 1.5458 step/s
+09/13/2021 23:32:10 - INFO - __main__ - global step 16980/36816, epoch: 2, batch: 4707, rank_id: 0, loss: 0.464942, lr: 0.0000462768, speed: 1.4038 step/s
+09/13/2021 23:32:31 - INFO - __main__ - global step 17010/36816, epoch: 2, batch: 4737, rank_id: 0, loss: 0.332693, lr: 0.0000461511, speed: 1.4198 step/s
+09/13/2021 23:32:52 - INFO - __main__ - global step 17040/36816, epoch: 2, batch: 4767, rank_id: 0, loss: 0.353847, lr: 0.0000460253, speed: 1.4603 step/s
+09/13/2021 23:32:52 - INFO - __main__ - ====================================================================================================
+09/13/2021 23:32:52 - INFO - __main__ - m_acc:
+09/13/2021 23:33:14 - INFO - __main__ - eval loss: 0.316141, acc: 0.8342333163525216, 
+09/13/2021 23:33:14 - INFO - __main__ - mm_acc:
+09/13/2021 23:33:36 - INFO - __main__ - eval loss: 0.475563, acc: 0.8356387306753458, 
+09/13/2021 23:33:36 - INFO - __main__ - eval done total : 44.73192834854126 s
+09/13/2021 23:33:57 - INFO - __main__ - global step 17070/36816, epoch: 2, batch: 4797, rank_id: 0, loss: 0.485466, lr: 0.0000458994, speed: 0.4610 step/s
+09/13/2021 23:34:17 - INFO - __main__ - global step 17100/36816, epoch: 2, batch: 4827, rank_id: 0, loss: 0.278267, lr: 0.0000457735, speed: 1.5104 step/s
+09/13/2021 23:34:37 - INFO - __main__ - global step 17130/36816, epoch: 2, batch: 4857, rank_id: 0, loss: 0.295282, lr: 0.0000456475, speed: 1.4854 step/s
+09/13/2021 23:34:57 - INFO - __main__ - global step 17160/36816, epoch: 2, batch: 4887, rank_id: 0, loss: 0.465009, lr: 0.0000455214, speed: 1.5024 step/s
+09/13/2021 23:35:16 - INFO - __main__ - global step 17190/36816, epoch: 2, batch: 4917, rank_id: 0, loss: 0.454550, lr: 0.0000453953, speed: 1.5279 step/s
+09/13/2021 23:35:37 - INFO - __main__ - global step 17220/36816, epoch: 2, batch: 4947, rank_id: 0, loss: 0.309084, lr: 0.0000452692, speed: 1.4657 step/s
+09/13/2021 23:35:57 - INFO - __main__ - global step 17250/36816, epoch: 2, batch: 4977, rank_id: 0, loss: 0.436004, lr: 0.0000451430, speed: 1.5240 step/s
+09/13/2021 23:36:16 - INFO - __main__ - global step 17280/36816, epoch: 2, batch: 5007, rank_id: 0, loss: 0.509012, lr: 0.0000450167, speed: 1.5310 step/s
+09/13/2021 23:36:16 - INFO - __main__ - ====================================================================================================
+09/13/2021 23:36:16 - INFO - __main__ - m_acc:
+09/13/2021 23:36:39 - INFO - __main__ - eval loss: 0.344043, acc: 0.8334182373917474, 
+09/13/2021 23:36:39 - INFO - __main__ - mm_acc:
+09/13/2021 23:37:02 - INFO - __main__ - eval loss: 0.464174, acc: 0.8362489829129374, 
+09/13/2021 23:37:02 - INFO - __main__ - eval done total : 45.559447050094604 s
+09/13/2021 23:37:22 - INFO - __main__ - global step 17310/36816, epoch: 2, batch: 5037, rank_id: 0, loss: 0.239928, lr: 0.0000448904, speed: 0.4585 step/s
+09/13/2021 23:37:42 - INFO - __main__ - global step 17340/36816, epoch: 2, batch: 5067, rank_id: 0, loss: 0.429250, lr: 0.0000447641, speed: 1.4434 step/s
+09/13/2021 23:38:02 - INFO - __main__ - global step 17370/36816, epoch: 2, batch: 5097, rank_id: 0, loss: 0.292788, lr: 0.0000446377, speed: 1.5202 step/s
+09/13/2021 23:38:23 - INFO - __main__ - global step 17400/36816, epoch: 2, batch: 5127, rank_id: 0, loss: 0.296130, lr: 0.0000445112, speed: 1.4476 step/s
+09/13/2021 23:38:43 - INFO - __main__ - global step 17430/36816, epoch: 2, batch: 5157, rank_id: 0, loss: 0.423971, lr: 0.0000443848, speed: 1.5073 step/s
+09/13/2021 23:39:03 - INFO - __main__ - global step 17460/36816, epoch: 2, batch: 5187, rank_id: 0, loss: 0.539098, lr: 0.0000442582, speed: 1.4596 step/s
+09/13/2021 23:39:23 - INFO - __main__ - global step 17490/36816, epoch: 2, batch: 5217, rank_id: 0, loss: 0.265337, lr: 0.0000441317, speed: 1.5005 step/s
+09/13/2021 23:39:43 - INFO - __main__ - global step 17520/36816, epoch: 2, batch: 5247, rank_id: 0, loss: 0.304055, lr: 0.0000440051, speed: 1.5106 step/s
+09/13/2021 23:39:43 - INFO - __main__ - ====================================================================================================
+09/13/2021 23:39:43 - INFO - __main__ - m_acc:
+09/13/2021 23:40:06 - INFO - __main__ - eval loss: 0.305165, acc: 0.8336220071319409, 
+09/13/2021 23:40:06 - INFO - __main__ - mm_acc:
+09/13/2021 23:40:29 - INFO - __main__ - eval loss: 0.473439, acc: 0.8354353132628153, 
+09/13/2021 23:40:29 - INFO - __main__ - eval done total : 45.5134174823761 s
+09/13/2021 23:40:49 - INFO - __main__ - global step 17550/36816, epoch: 2, batch: 5277, rank_id: 0, loss: 0.568124, lr: 0.0000438784, speed: 0.4545 step/s
+09/13/2021 23:41:09 - INFO - __main__ - global step 17580/36816, epoch: 2, batch: 5307, rank_id: 0, loss: 0.369547, lr: 0.0000437517, speed: 1.5204 step/s
+09/13/2021 23:41:30 - INFO - __main__ - global step 17610/36816, epoch: 2, batch: 5337, rank_id: 0, loss: 0.256953, lr: 0.0000436250, speed: 1.4290 step/s
+09/13/2021 23:41:50 - INFO - __main__ - global step 17640/36816, epoch: 2, batch: 5367, rank_id: 0, loss: 0.437205, lr: 0.0000434983, speed: 1.4991 step/s
+09/13/2021 23:42:10 - INFO - __main__ - global step 17670/36816, epoch: 2, batch: 5397, rank_id: 0, loss: 0.531989, lr: 0.0000433715, speed: 1.4993 step/s
+09/13/2021 23:42:29 - INFO - __main__ - global step 17700/36816, epoch: 2, batch: 5427, rank_id: 0, loss: 0.277423, lr: 0.0000432447, speed: 1.5331 step/s
+09/13/2021 23:42:50 - INFO - __main__ - global step 17730/36816, epoch: 2, batch: 5457, rank_id: 0, loss: 0.382721, lr: 0.0000431178, speed: 1.4733 step/s
+09/13/2021 23:43:10 - INFO - __main__ - global step 17760/36816, epoch: 2, batch: 5487, rank_id: 0, loss: 0.418772, lr: 0.0000429910, speed: 1.4779 step/s
+09/13/2021 23:43:10 - INFO - __main__ - ====================================================================================================
+09/13/2021 23:43:10 - INFO - __main__ - m_acc:
+09/13/2021 23:43:33 - INFO - __main__ - eval loss: 0.331823, acc: 0.8334182373917474, 
+09/13/2021 23:43:33 - INFO - __main__ - mm_acc:
+09/13/2021 23:43:55 - INFO - __main__ - eval loss: 0.489804, acc: 0.8363506916192026, 
+09/13/2021 23:43:55 - INFO - __main__ - eval done total : 45.2785005569458 s
+09/13/2021 23:44:16 - INFO - __main__ - global step 17790/36816, epoch: 2, batch: 5517, rank_id: 0, loss: 0.435666, lr: 0.0000428641, speed: 0.4551 step/s
+09/13/2021 23:44:36 - INFO - __main__ - global step 17820/36816, epoch: 2, batch: 5547, rank_id: 0, loss: 0.503944, lr: 0.0000427371, speed: 1.5008 step/s
+09/13/2021 23:44:56 - INFO - __main__ - global step 17850/36816, epoch: 2, batch: 5577, rank_id: 0, loss: 0.193577, lr: 0.0000426102, speed: 1.4985 step/s
+09/13/2021 23:45:16 - INFO - __main__ - global step 17880/36816, epoch: 2, batch: 5607, rank_id: 0, loss: 0.502537, lr: 0.0000424832, speed: 1.5104 step/s
+09/13/2021 23:45:36 - INFO - __main__ - global step 17910/36816, epoch: 2, batch: 5637, rank_id: 0, loss: 0.591983, lr: 0.0000423562, speed: 1.5095 step/s
+09/13/2021 23:45:55 - INFO - __main__ - global step 17940/36816, epoch: 2, batch: 5667, rank_id: 0, loss: 0.418395, lr: 0.0000422292, speed: 1.5392 step/s
