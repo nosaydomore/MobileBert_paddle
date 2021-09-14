@@ -157,6 +157,8 @@ mm_acc:
 
 模型与log保存在output_squadv1 目录下
 
+模型在SQuADV1上有极少概率会出现最终结果差0.1(em),这是建议重新再跑一边 \\ :p
+
 **SQuADV2:** 
 `bash train_squadv2.sh`
 
