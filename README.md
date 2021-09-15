@@ -29,7 +29,7 @@ cd MobileBert_paddle
 
 复现环境使用的是baidu的AIStudio至尊版（V100 32G）
 
-AIStudio项目地址：https://aistudio.baidu.com/aistudio/projectdetail/2367246 , AiStudio运行更方便. 强烈建议在AIStudio的终端上进行结果复现(版本选择：MobileBert_PaddleV2)。
+AIStudio项目地址：https://aistudio.baidu.com/aistudio/projectdetail/2367246 , AiStudio运行更方便. 强烈建议在AIStudio的终端上进行结果复现(版本选择：MobileBert_PaddleV3)。
 
 ### 1. 模型转换
 
