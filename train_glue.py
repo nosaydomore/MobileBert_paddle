@@ -287,6 +287,8 @@ def do_train(args):
         paddle.distributed.init_parallel_env()
 
     set_seed(args)
+    if not os.path.exists(args.output_dir):
+        os.makedirs(args.output_dir)
     logging.basicConfig(
         format="%(asctime)s - %(levelname)s - %(name)s - %(message)s",
         datefmt="%m/%d/%Y %H:%M:%S",
