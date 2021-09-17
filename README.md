@@ -2,7 +2,7 @@
 这是一个mobileBert的基于paddle深度学习框架的复现
 
 MobileBERT: a Compact Task-Agnostic BERT for Resource-Limited Devices.
-[https://arxiv.org/pdf/1907.11692.pdf]
+[https://arxiv.org/pdf/2004.02984.pdf]
 
 原论文效果
 ![glue](img/mobilebert_glue.png)
