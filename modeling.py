@@ -2,6 +2,7 @@ import math
 import paddle
 import paddle.nn as nn
 from paddlenlp.transformers import PretrainedModel,register_base_model
+
 from paddle.nn import BCEWithLogitsLoss, CrossEntropyLoss, MSELoss
 
 import paddle.nn.functional as F
@@ -86,12 +87,9 @@ class MobileBertEmbeddings(nn.Layer):
         self.trigram_input = trigram_input
         self.embedding_size = embedding_size
         self.hidden_size = hidden_size
-        word_emb_weight = fluid.initializer.ConstantInitializer(1.0)
-        self.word_embeddings = nn.Embedding(vocab_size, embedding_size, padding_idx=pad_token_id,weight_attr=word_emb_weight)
-        pos_emb_weight = fluid.initializer.ConstantInitializer(1.0)
-        self.position_embeddings = nn.Embedding(max_position_embeddings, hidden_size,weight_attr=pos_emb_weight)
-        tkn_emb_weight = fluid.initializer.ConstantInitializer(1.0)
-        self.token_type_embeddings = nn.Embedding(type_vocab_size, hidden_size, weight_attr=tkn_emb_weight)
+        self.word_embeddings = nn.Embedding(vocab_size, embedding_size, padding_idx=pad_token_id)
+        self.position_embeddings = nn.Embedding(max_position_embeddings, hidden_size)
+        self.token_type_embeddings = nn.Embedding(type_vocab_size, hidden_size)
 
 
         embed_dim_multiplier = 3 if self.trigram_input else 1

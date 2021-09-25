@@ -26,6 +26,6 @@ def convert_pytorch_dict_to_paddle(torch_model_path,paddle_model_path):
 if __name__ == "__main__":
     torch_checkpoint_path='./weight/torch/pytorch_model.bin'
     paddle_checkpoint_path="./weight/paddle/model_state.pdparams"
-    convert_pytorch_dict_to_paddle(torch_checkpoint_path,paddle_checkpoint_path)
+    convert_pytorch_dict_to_paddle(torch_checkpoint_path, paddle_checkpoint_path)
 
 
