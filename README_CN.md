@@ -193,7 +193,30 @@ mm_acc:
 # 六、代码结构与详细说明
 ## 6.1 代码结构
 
+```shell
+├── img						# readme的图片路径
+├── model					# 模型
+├── scripts					# 执行shell执行脚本
+├── task					# 预测任务模型文件保存路径
+├── utils					# 工具代码
+└── weight					# 预训练权重，用于下游任务微调
+├── README.md				 # 文档
+├── README_CN.md			 # 文档
+├── compare.py				 # 验证模型对齐脚本
+├── compare_tokenizer.py	  # 验证tokenizer对齐脚本
+├── convert.py				 # pytorch 模型转换 paddle
+├── eval_mnli.py               # mnli 数据集评估脚本
+├── eval_squad.py			  # squad 数据集评估脚本
+├── train_glue.py			  # mnli 数据集评估脚本
+├── train_squad.py			  # squad 数据集评估脚本
 
+```
+
+
+
+## 6.2 参数说明
+
+......
 
 
 # 七、模型信息
