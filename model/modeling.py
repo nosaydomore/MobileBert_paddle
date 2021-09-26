@@ -7,8 +7,6 @@ from paddle.nn import BCEWithLogitsLoss, CrossEntropyLoss, MSELoss
 
 import paddle.nn.functional as F
 
-import paddle.fluid as fluid
-
 
 __all__ = [
     "MobileBertModel",
@@ -58,7 +56,7 @@ class NoNorm(nn.Layer):#paddle
         if isinstance(feat_size,int):
             feat_size=[feat_size]
         self.bias = paddle.create_parameter(feat_size,'float32', is_bias=True)
-        self.weight = paddle.create_parameter(feat_size, 'float32', default_initializer=fluid.initializer.ConstantInitializer(value=1.0))
+        self.weight = paddle.create_parameter(feat_size, 'float32', default_initializer=paddle.nn.initializer.Constant(value=1.0))
 
     def forward(self, input_tensor):
         return input_tensor * self.weight + self.bias
@@ -95,9 +93,7 @@ class MobileBertEmbeddings(nn.Layer):
         embed_dim_multiplier = 3 if self.trigram_input else 1
         embedded_input_size = self.embedding_size * embed_dim_multiplier
         # print("embedding_transformation:", embedded_input_size, config.hidden_size)
-        self.embedding_transformation = nn.Linear(embedded_input_size, hidden_size, 
-            weight_attr=fluid.initializer.ConstantInitializer(1.0), 
-            bias_attr=fluid.initializer.ConstantInitializer(0.0))
+        self.embedding_transformation = nn.Linear(embedded_input_size, hidden_size)
 
         self.LayerNorm = NORM2FN[normalization_type](hidden_size)
         self.dropout = nn.Dropout(hidden_dropout_prob)
@@ -162,11 +158,10 @@ class MobileBertSelfAttention(nn.Layer):
         self.num_attention_heads = num_attention_heads
         self.attention_head_size = int(true_hidden_size / num_attention_heads)
         self.all_head_size = self.num_attention_heads * self.attention_head_size
-        self.query = nn.Linear(true_hidden_size, self.all_head_size, weight_attr=fluid.initializer.ConstantInitializer(1.), bias_attr=fluid.initializer.ConstantInitializer(0.))
-        self.key = nn.Linear(true_hidden_size, self.all_head_size, weight_attr=fluid.initializer.ConstantInitializer(1.), bias_attr=fluid.initializer.ConstantInitializer(0.))
+        self.query = nn.Linear(true_hidden_size, self.all_head_size)
+        self.key = nn.Linear(true_hidden_size, self.all_head_size)
         self.value = nn.Linear(
-            true_hidden_size if use_bottleneck_attention else hidden_size, self.all_head_size,
-            weight_attr=fluid.initializer.ConstantInitializer(1.), bias_attr=fluid.initializer.ConstantInitializer(0.))
+            true_hidden_size if use_bottleneck_attention else hidden_size, self.all_head_size)
         self.dropout = nn.Dropout(attention_probs_dropout_prob)
 
     def transpose_for_scores(self, x):
@@ -226,8 +221,7 @@ class MobileBertSelfOutput(nn.Layer):
         ):
         super().__init__()
         self.use_bottleneck = use_bottleneck
-        self.dense = nn.Linear(true_hidden_size, true_hidden_size,
-            weight_attr=fluid.initializer.ConstantInitializer(1.),bias_attr=fluid.initializer.ConstantInitializer(0.))
+        self.dense = nn.Linear(true_hidden_size, true_hidden_size)
         self.LayerNorm = NORM2FN[normalization_type](true_hidden_size, eps=layer_norm_eps)
         if not self.use_bottleneck:
             self.dropout = nn.Dropout(hidden_dropout_prob)
@@ -296,8 +290,7 @@ class MobileBertIntermediate(nn.Layer):
         hidden_act="relu",
         ):
         super().__init__()
-        self.dense = nn.Linear(true_hidden_size, intermediate_size,
-            weight_attr=fluid.initializer.ConstantInitializer(1.),bias_attr=fluid.initializer.ConstantInitializer(0.))
+        self.dense = nn.Linear(true_hidden_size, intermediate_size)
         if isinstance(hidden_act, str):
             self.intermediate_act_fn = ACT2FN[hidden_act]
         else:
@@ -319,8 +312,7 @@ class OutputBottleneck(nn.Layer):
         hidden_dropout_prob=0.0,
         ):
         super().__init__()
-        self.dense = nn.Linear(true_hidden_size, hidden_size,
-            weight_attr=fluid.initializer.ConstantInitializer(1.),bias_attr=fluid.initializer.ConstantInitializer(0.))
+        self.dense = nn.Linear(true_hidden_size, hidden_size)
         self.LayerNorm = NORM2FN[normalization_type](hidden_size, eps=layer_norm_eps)
         self.dropout = nn.Dropout(hidden_dropout_prob)
 
@@ -344,8 +336,7 @@ class MobileBertOutput(nn.Layer):
         ):
         super().__init__()
         self.use_bottleneck = use_bottleneck
-        self.dense = nn.Linear(intermediate_size, true_hidden_size,
-            weight_attr=fluid.initializer.ConstantInitializer(1.),bias_attr=fluid.initializer.ConstantInitializer(0.))
+        self.dense = nn.Linear(intermediate_size, true_hidden_size)
         self.LayerNorm = NORM2FN[normalization_type](true_hidden_size)
         if not self.use_bottleneck:
             self.dropout = nn.Dropout(hidden_dropout_prob)
@@ -377,8 +368,7 @@ class BottleneckLayer(nn.Layer):
         layer_norm_eps=1e-12,
         ):
         super().__init__()
-        self.dense = nn.Linear(hidden_size, intra_bottleneck_size,
-            weight_attr=fluid.initializer.ConstantInitializer(1.),bias_attr=fluid.initializer.ConstantInitializer(0.))
+        self.dense = nn.Linear(hidden_size, intra_bottleneck_size)
         self.LayerNorm = NORM2FN[normalization_type](intra_bottleneck_size, eps=layer_norm_eps)
 
     def forward(self, hidden_states):
@@ -448,8 +438,7 @@ class FFNOutput(nn.Layer):
         layer_norm_eps=1e-12,
         ):
         super().__init__()
-        self.dense = nn.Linear(intermediate_size, true_hidden_size,
-            weight_attr=fluid.initializer.ConstantInitializer(1.),bias_attr=fluid.initializer.ConstantInitializer(0.))
+        self.dense = nn.Linear(intermediate_size, true_hidden_size)
         self.LayerNorm = NORM2FN[normalization_type](true_hidden_size, eps=layer_norm_eps)
 
     def forward(self, hidden_states, residual_tensor):

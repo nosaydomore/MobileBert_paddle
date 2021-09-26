@@ -191,7 +191,7 @@ mm_acc:
 模型与log保存在output_mnli 目录下
 
 # 六、代码结构与详细说明
-
+## 6.1 代码结构
 
 
 
@@ -205,7 +205,7 @@ mm_acc:
 | 框架版本 | Paddle 2.1.2                                                 |
 | 应用场景 | 自然语言处理                                                 |
 | 支持硬件 | GPU                                                          |
-| 下载链接 | [预训练模型](https://pan.baidu.com/s/1o35WuWIUPNWQYyc43dj_pQ)  （提取码:92fk） |
+| 下载链接 | [预训练模型](https://pan.baidu.com/s/1Uga9Wwx9cN8CdqD5G4-bFQ)  （提取码:jftn） |
 | 在线运行 | [botebook](https://aistudio.baidu.com/aistudio/projectdetail/2367246)  (版本选择：MobileBert_PaddleV3) |
 
 参考文献与项目：

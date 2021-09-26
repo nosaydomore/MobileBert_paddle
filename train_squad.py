@@ -14,11 +14,11 @@ from paddlenlp.transformers import (
 from tqdm import tqdm
 
 from args import parse_args
-from data import get_dev_dataloader, get_train_dataloader
-from modeling import MobileBertForQuestionAnswering
-from model_tokenizer import MobileBertTokenizerV2
-from metric import compute_prediction, squad_evaluate
-from utils import (
+from utils.data import get_dev_dataloader, get_train_dataloader
+from model.modeling import MobileBertForQuestionAnswering
+from model.model_tokenizer import MobileBertTokenizerV2
+from utils.metric import compute_prediction, squad_evaluate
+from utils.utils import (
     CrossEntropyLossForSQuAD,
     get_scheduler,
     get_writer,

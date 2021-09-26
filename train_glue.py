@@ -28,10 +28,10 @@ from paddle.metric import Accuracy
 from paddlenlp.datasets import load_dataset
 from paddlenlp.data import Stack, Tuple, Pad
 from paddlenlp.transformers import BertForSequenceClassification, BertTokenizer
-from modeling import MobileBertForSequenceClassification
-from model_tokenizer import MobileBertTokenizer
+from model.modeling import MobileBertForSequenceClassification
+from model.model_tokenizer import MobileBertTokenizer
 
-from utils import get_scheduler
+from utils.utils import get_scheduler
 from paddlenlp.metrics import AccuracyAndF1, Mcc, PearsonAndSpearman
 import json
 import math

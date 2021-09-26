@@ -1,7 +1,7 @@
 import paddle
 
-from args import parse_args
-from data import get_dev_dataloader
+from utils.args import parse_args
+from utils.data import get_dev_dataloader
 from train_squad import MODEL_CLASSES, evaluate
 import os
 
@@ -30,5 +30,5 @@ def main(args):
 
 
 if __name__ == "__main__":
-    args = parse_args()
-    main(args)
+    args_ = parse_args()
+    main(args_)

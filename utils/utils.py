@@ -14,7 +14,7 @@ from paddlenlp.transformers import (
     LinearDecayWithWarmup,
     PolyDecayWithWarmup,
 )
-from modeling import NoNorm
+from model.modeling import NoNorm
 
 scheduler_type2cls = {
     "linear": LinearDecayWithWarmup,
@@ -193,3 +193,11 @@ def load_pickle(input_file):
     with open(str(input_file), "rb") as f:
         data = pickle.load(f)
     return data
+
+if __name__ == '__main__':
+    
+    lr_scheduler = LinearDecayWithWarmup(7.5e-6,134086,0)
+    for i in range(20080):
+        lr_scheduler.step()
+        if i % 20==0 and i>17800:
+            print("{}, {:6f}".format(i ,lr_scheduler.get_lr()))

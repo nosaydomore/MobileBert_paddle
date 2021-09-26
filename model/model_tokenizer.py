@@ -1,4 +1,4 @@
-from bert_tokenizer import BertTokenizer
+from utils.bert_tokenizer import BertTokenizer
 
 VOCAB_FILES_NAMES = {"vocab_file": "vocab.txt"}
 

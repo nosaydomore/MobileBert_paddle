@@ -5,7 +5,7 @@ from paddle.io import BatchSampler, DataLoader
 from paddlenlp.data import Dict, Pad, Stack
 from paddlenlp.datasets import load_dataset
 
-from utils import load_pickle, save_pickle
+from utils.utils import load_pickle, save_pickle
 from tqdm import tqdm
 
 # this right
